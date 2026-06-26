@@ -1009,7 +1009,7 @@
                     const isHidden = a.includes('隐藏');
                     const cnObj = abilitiesCn[clean];
                     const cnName = (cnObj && cnObj.name_cn) ? cnObj.name_cn : (typeof cnObj === 'string' ? cnObj : '');
-                    const desc = (cnObj && cnObj.desc) ? cnObj.desc : '';
+                    const desc = (cnObj && cnObj.desc_cn) ? cnObj.desc_cn : '';
                     if (!map[clean]) map[clean] = { name: clean, cn: cnName, desc, pokes: [] };
                     map[clean].pokes.push({ id, num: d.num, name: d.name, cn: pokedexCn[d.name] || '', hidden: isHidden });
                 });

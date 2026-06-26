@@ -1,1290 +1,1612 @@
 {
     "Flash Fire": {
         "name_cn": "引火",
-        "desc": "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its offensive stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks."
+        "desc": "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its offensive stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks.",
+        "desc_cn": "免疫火属性招式。受到火属性招式攻击时，自身使用火属性招式的威力×1.5。被冰冻时无法被火属性招式解冻。"
     },
     "Overgrow": {
         "name_cn": "茂盛",
-        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack."
+        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack.",
+        "desc_cn": "HP低于1/3时，使用草属性招式的威力×1.5。"
     },
     "Sand Veil": {
         "name_cn": "沙隐",
-        "desc": "If Sandstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Sandstorm."
+        "desc": "If Sandstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Sandstorm.",
+        "desc_cn": "沙暴天气下，对手招式的命中率×0.8。不受沙暴伤害。"
     },
     "Scrappy": {
         "name_cn": "胆量",
-        "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. This Pokemon is immune to the effect of the Intimidate Ability."
+        "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. This Pokemon is immune to the effect of the Intimidate Ability.",
+        "desc_cn": "一般属性和格斗属性招式可以命中幽灵属性宝可梦。免疫威吓效果。"
     },
     "Hunger Switch": {
         "name_cn": "饱了又饿",
-        "desc": "If this Pokemon is a Morpeko, it changes formes between its Full Belly Mode and Hangry Mode at the end of each turn."
+        "desc": "If this Pokemon is a Morpeko, it changes formes between its Full Belly Mode and Hangry Mode at the end of each turn.",
+        "desc_cn": "莫鲁贝可每回合结束时在满腹花纹和放电花纹之间切换形态。"
     },
     "Long Reach": {
         "name_cn": "远隔",
-        "desc": "This Pokemon's attacks do not make contact with the target."
+        "desc": "This Pokemon's attacks do not make contact with the target.",
+        "desc_cn": "自身的攻击招式不与目标接触。"
     },
     "Arena Trap": {
         "name_cn": "沙穴",
-        "desc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type."
+        "desc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
+        "desc_cn": "无法替换或逃走（浮游、携带洞穴之壳、幽灵属性除外）。"
     },
     "Download": {
         "name_cn": "下载",
-        "desc": "On switch-in, this Pokemon's Attack or Special Attack is raised by 1 stage based on the weaker combined defensive stat of all opposing Pokemon. Attack is raised if their Defense is lower, and Special Attack is raised if their Special Defense is the same or lower."
+        "desc": "On switch-in, this Pokemon's Attack or Special Attack is raised by 1 stage based on the weaker combined defensive stat of all opposing Pokemon. Attack is raised if their Defense is lower, and Special Attack is raised if their Special Defense is the same or lower.",
+        "desc_cn": "上场时，根据对手防御和特防中较低的一项，提升物攻或特攻1级。"
     },
     "Supreme Overlord": {
         "name_cn": "大将",
-        "desc": "This Pokemon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokemon has fainted on the user's side when this Ability became active, and X cannot be greater than 5."
+        "desc": "This Pokemon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokemon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
+        "desc_cn": "同伴每有一只宝可梦濒死，自身招式威力提升10%，最多叠加5次（×1.5）。"
     },
     "Liquid Voice": {
         "name_cn": "湿润之声",
-        "desc": "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身的声音招式变为水属性招式。"
     },
     "Cute Charm": {
         "name_cn": "迷人之躯",
-        "desc": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender."
+        "desc": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.",
+        "desc_cn": "对手接触自身时，有30%概率陷入迷住状态（异性对手）。"
     },
     "Aftermath": {
         "name_cn": "诱爆",
-        "desc": "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability."
+        "desc": "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability.",
+        "desc_cn": "被接触招式击倒时，攻击方损失最大HP的1/4（魔法防守或湿气无效化时除外）。"
     },
     "Forewarn": {
         "name_cn": "预知梦",
-        "desc": "On switch-in, this Pokemon is alerted to the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power."
+        "desc": "On switch-in, this Pokemon is alerted to the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
+        "desc_cn": "上场时，察觉对手威力最高的招式。"
     },
     "Moody": {
         "name_cn": "心情不定",
-        "desc": "This Pokemon has a random stat, other than accuracy or evasiveness, raised by 2 stages and another stat lowered by 1 stage at the end of each turn."
+        "desc": "This Pokemon has a random stat, other than accuracy or evasiveness, raised by 2 stages and another stat lowered by 1 stage at the end of each turn.",
+        "desc_cn": "每回合结束时，一项能力（命中率和回避率除外）提升2级，另一项降低1级。"
     },
     "Purifying Salt": {
         "name_cn": "洁净之盐",
-        "desc": "This Pokemon cannot become affected by a non-volatile status condition or Yawn. If a Pokemon uses a Ghost-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon."
+        "desc": "This Pokemon cannot become affected by a non-volatile status condition or Yawn. If a Pokemon uses a Ghost-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+        "desc_cn": "免疫异常状态和哈欠。受到幽灵属性攻击时，攻击方的物攻或特攻减半计算伤害。"
     },
     "Light Metal": {
         "name_cn": "轻金属",
-        "desc": "This Pokemon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokemon's weight will not drop below 0.1 kg."
+        "desc": "This Pokemon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokemon's weight will not drop below 0.1 kg.",
+        "desc_cn": "体重减半（向下取整至0.1kg）。在自身变轻之后、浮石效果之前计算。"
     },
     "RKS System": {
         "name_cn": "ＡＲ系统",
-        "desc": "If this Pokemon is a Silvally, its type changes to match its held Memory."
+        "desc": "If this Pokemon is a Silvally, its type changes to match its held Memory.",
+        "desc_cn": "银伴战兽的属性变为携带存储碟的属性。"
     },
     "Anger Shell": {
         "name_cn": "愤怒甲壳",
-        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Attack, Special Attack, and Speed are raised by 1 stage, and its Defense and Special Defense are lowered by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability."
+        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Attack, Special Attack, and Speed are raised by 1 stage, and its Defense and Special Defense are lowered by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+        "desc_cn": "HP高于1/2时受到伤害降至1/2以下，物攻、特攻、速度提升1级，物防、特防降低1级。"
     },
     "Turboblaze": {
         "name_cn": "涡轮火焰",
-        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon."
+        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
+        "desc_cn": "自身招式无视对手的防御类特性（如飘浮、结实、魔法防守等）。"
     },
     "Ball Fetch": {
         "name_cn": "捡球",
-        "desc": "No competitive use."
+        "desc": "No competitive use.",
+        "desc_cn": "对战中无效果。"
     },
     "Power Spot": {
         "name_cn": "能量点",
-        "desc": "This Pokemon's allies have the power of their moves multiplied by 1.3. This affects Doom Desire and Future Sight, even if the user is not on the field."
+        "desc": "This Pokemon's allies have the power of their moves multiplied by 1.3. This affects Doom Desire and Future Sight, even if the user is not on the field.",
+        "desc_cn": "自身场上同伴的招式威力×1.3。"
     },
     "Damp": {
         "name_cn": "湿气",
-        "desc": "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect."
+        "desc": "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.",
+        "desc_cn": "自身在场时，大爆炸、自爆、诱爆等招式和特性无法生效。"
     },
     "Gale Wings": {
         "name_cn": "疾风之翼",
-        "desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1."
+        "desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
+        "desc_cn": "HP全满时，飞行属性招式优先度+1。"
     },
     "Surge Surfer": {
         "name_cn": "冲浪之尾",
-        "desc": "If Electric Terrain is active, this Pokemon's Speed is doubled."
+        "desc": "If Electric Terrain is active, this Pokemon's Speed is doubled.",
+        "desc_cn": "电气场地中，自身速度翻倍。"
     },
     "Contrary": {
         "name_cn": "唱反调",
-        "desc": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Z-Move is used."
+        "desc": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Z-Move is used.",
+        "desc_cn": "能力等级的变化方向反转（提升变为降低，降低变为提升）。"
     },
     "Wonder Skin": {
         "name_cn": "奇迹皮肤",
-        "desc": "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this Pokemon. This effect comes before other effects that modify accuracy."
+        "desc": "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this Pokemon. This effect comes before other effects that modify accuracy.",
+        "desc_cn": "对手的变化招式命中率变为50%。"
     },
     "Sharpness": {
         "name_cn": "锋锐",
-        "desc": "This Pokemon's slicing moves have their power multiplied by 1.5."
+        "desc": "This Pokemon's slicing moves have their power multiplied by 1.5.",
+        "desc_cn": "自身切割类招式的威力×1.5。"
     },
     "Strong Jaw": {
         "name_cn": "强壮之颚",
-        "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5."
+        "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5.",
+        "desc_cn": "自身啃咬类招式的威力×1.5。"
     },
     "Serene Grace": {
         "name_cn": "天恩",
-        "desc": "This Pokemon's moves have their secondary effect chance doubled. This effect stacks with the Rainbow effect, except for secondary effects that cause the target to flinch."
+        "desc": "This Pokemon's moves have their secondary effect chance doubled. This effect stacks with the Rainbow effect, except for secondary effects that cause the target to flinch.",
+        "desc_cn": "自身招式的追加效果触发率翻倍。"
     },
     "Power Construct": {
         "name_cn": "群聚变形",
-        "desc": "If this Pokemon is a Zygarde in its 10% or 50% Forme, it changes to Complete Forme when it has 1/2 or less of its maximum HP at the end of the turn."
+        "desc": "If this Pokemon is a Zygarde in its 10% or 50% Forme, it changes to Complete Forme when it has 1/2 or less of its maximum HP at the end of the turn.",
+        "desc_cn": "基格尔德在HP低于1/2时变为完全体形态。"
     },
     "Hyper Cutter": {
         "name_cn": "怪力钳",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
+        "desc_cn": "对手无法降低自身物攻等级。"
     },
     "Steely Spirit": {
         "name_cn": "钢之意志",
-        "desc": "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5. This affects Doom Desire even if the user is not on the field."
+        "desc": "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5. This affects Doom Desire even if the user is not on the field.",
+        "desc_cn": "自身和同伴的钢属性招式威力×1.5。"
     },
     "Trace": {
         "name_cn": "复制",
-        "desc": "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Teraform Zero, Tera Shell, Tera Shift, Trace, Zen Mode, and Zero to Hero. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does."
+        "desc": "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Teraform Zero, Tera Shell, Tera Shift, Trace, Zen Mode, and Zero to Hero. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does.",
+        "desc_cn": "上场时，复制对手随机一个宝可梦的特性。"
     },
     "Battery": {
         "name_cn": "蓄电池",
-        "desc": "This Pokemon's allies have the power of their special attacks multiplied by 1.3."
+        "desc": "This Pokemon's allies have the power of their special attacks multiplied by 1.3.",
+        "desc_cn": "自身场上同伴的特殊攻击招式威力×1.3。"
     },
     "Power of Alchemy": {
         "name_cn": "化学之力",
-        "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, and Zero to Hero."
+        "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
+        "desc_cn": "同伴濒死时，复制其特性。"
     },
     "Pure Power": {
         "name_cn": "瑜伽之力",
-        "desc": "This Pokemon's Attack is doubled."
+        "desc": "This Pokemon's Attack is doubled.",
+        "desc_cn": "自身物攻翻倍。"
     },
     "Technician": {
         "name_cn": "技术高手",
-        "desc": "This Pokemon's moves of 60 power or less have their power multiplied by 1.5, including Struggle. This effect comes after a move's effect changes its own power."
+        "desc": "This Pokemon's moves of 60 power or less have their power multiplied by 1.5, including Struggle. This effect comes after a move's effect changes its own power.",
+        "desc_cn": "自身威力60以下的招式威力×1.5。"
     },
     "Pastel Veil": {
         "name_cn": "粉彩护幕",
-        "desc": "This Pokemon and its allies cannot be poisoned. Gaining this Ability while this Pokemon or its ally is poisoned cures them. If this Ability is being ignored during an effect that causes poison, this Pokemon is cured immediately but its ally is not."
+        "desc": "This Pokemon and its allies cannot be poisoned. Gaining this Ability while this Pokemon or its ally is poisoned cures them. If this Ability is being ignored during an effect that causes poison, this Pokemon is cured immediately but its ally is not.",
+        "desc_cn": "自身和同伴不会中毒。获得该特性时可治愈中毒状态。"
     },
     "Perish Body": {
         "name_cn": "灭亡之躯",
-        "desc": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokemon if the attacker already has a perish count."
+        "desc": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokemon if the attacker already has a perish count.",
+        "desc_cn": "与自身接触的宝可梦一同陷入灭亡倒计时。"
     },
     "Frisk": {
         "name_cn": "察觉",
-        "desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon."
+        "desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon.",
+        "desc_cn": "上场时，确认对手携带的道具。"
     },
     "Early Bird": {
         "name_cn": "早起",
-        "desc": "This Pokemon's sleep counter drops by 2 instead of 1."
+        "desc": "This Pokemon's sleep counter drops by 2 instead of 1.",
+        "desc_cn": "自身睡眠回合数每回合减少2。"
     },
     "Tough Claws": {
         "name_cn": "硬爪",
-        "desc": "This Pokemon's contact moves have their power multiplied by 1.3."
+        "desc": "This Pokemon's contact moves have their power multiplied by 1.3.",
+        "desc_cn": "自身接触类招式的威力×1.3。"
     },
     "Limber": {
         "name_cn": "柔软",
-        "desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it."
+        "desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.",
+        "desc_cn": "免疫麻痹状态。获得该特性时可治愈麻痹。"
     },
     "Heavy Metal": {
         "name_cn": "重金属",
-        "desc": "This Pokemon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone."
+        "desc": "This Pokemon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone.",
+        "desc_cn": "自身体重翻倍。在自身变轻之后计算。"
     },
     "Toxic Boost": {
         "name_cn": "中毒激升",
-        "desc": "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5."
+        "desc": "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
+        "desc_cn": "中毒状态下，自身物理招式威力×1.5。"
     },
     "Tangling Hair": {
         "name_cn": "卷发",
-        "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage."
+        "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+        "desc_cn": "与自身接触的宝可梦速度降低1级。"
     },
     "Wimp Out": {
         "name_cn": "跃跃欲逃",
-        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage."
+        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
+        "desc_cn": "HP高于1/2时受到伤害降至1/2以下，立即替换下场。"
     },
     "Fluffy": {
         "name_cn": "毛茸茸",
-        "desc": "This Pokemon receives 1/2 damage from contact moves, but double damage from Fire moves."
+        "desc": "This Pokemon receives 1/2 damage from contact moves, but double damage from Fire moves.",
+        "desc_cn": "受到接触招式伤害减半，但受到火属性招式伤害翻倍。"
     },
     "Multitype": {
         "name_cn": "多属性",
-        "desc": "If this Pokemon is an Arceus, its type changes to match its held Plate."
+        "desc": "If this Pokemon is an Arceus, its type changes to match its held Plate.",
+        "desc_cn": "阿尔宙斯的属性变为携带石板的属性。"
     },
     "Iron Fist": {
         "name_cn": "铁拳",
-        "desc": "This Pokemon's punch-based attacks have their power multiplied by 1.2."
+        "desc": "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
+        "desc_cn": "自身拳击类招式威力×1.2。"
     },
     "Synchronize": {
         "name_cn": "同步",
-        "desc": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition."
+        "desc": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.",
+        "desc_cn": "自身被灼伤、麻痹、中毒或剧毒时，攻击方也陷入相同异常状态。"
     },
     "Stall": {
         "name_cn": "慢出",
-        "desc": "This Pokemon moves last among Pokemon using the same or greater priority moves."
+        "desc": "This Pokemon moves last among Pokemon using the same or greater priority moves.",
+        "desc_cn": "在同优先度的宝可梦中最后行动。"
     },
     "Shields Down": {
         "name_cn": "界限盾壳",
-        "desc": "If this Pokemon is a Minior, it changes to its Core forme if it has 1/2 or less of its maximum HP, and changes to Meteor Form if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. While in its Meteor Form, it cannot become affected by a non-volatile status condition or Yawn."
+        "desc": "If this Pokemon is a Minior, it changes to its Core forme if it has 1/2 or less of its maximum HP, and changes to Meteor Form if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. While in its Meteor Form, it cannot become affected by a non-volatile status condition or Yawn.",
+        "desc_cn": "小陨星在HP低于1/2时变为核心形态，高于1/2时变为陨石形态。陨石形态免疫异常状态。"
     },
     "Ice Face": {
         "name_cn": "结冻头",
-        "desc": "If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face."
+        "desc": "If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face.",
+        "desc_cn": "第一次受到物理攻击伤害为0，随后变为普通形态。下雪或上场时恢复结冻头形态。"
     },
     "Dark Aura": {
         "name_cn": "暗黑气场",
-        "desc": "While this Pokemon is active, the power of Dark-type moves used by active Pokemon is multiplied by 1.33."
+        "desc": "While this Pokemon is active, the power of Dark-type moves used by active Pokemon is multiplied by 1.33.",
+        "desc_cn": "自身在场时，场上所有宝可梦的恶属性招式威力×1.33。"
     },
     "Honey Gather": {
         "name_cn": "采蜜",
-        "desc": "No competitive use."
+        "desc": "No competitive use.",
+        "desc_cn": "对战中无效果。"
     },
     "Overcoat": {
         "name_cn": "防尘",
-        "desc": "This Pokemon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability."
+        "desc": "This Pokemon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability.",
+        "desc_cn": "免疫粉末类招式、沙暴伤害及花粉团和孢子特性的效果。"
     },
     "Slush Rush": {
         "name_cn": "拨雪",
-        "desc": "If Snow is active, this Pokemon's Speed is doubled."
+        "desc": "If Snow is active, this Pokemon's Speed is doubled.",
+        "desc_cn": "冰雹天气下，自身速度翻倍。"
     },
     "Mirror Armor": {
         "name_cn": "镜甲",
-        "desc": "When one of this Pokemon's stat stages would be lowered by another Pokemon, that Pokemon's stat stage is lowered instead. This effect does not happen if this Pokemon's stat stage was already -6. If the other Pokemon has a substitute, neither Pokemon has its stat stage lowered."
+        "desc": "When one of this Pokemon's stat stages would be lowered by another Pokemon, that Pokemon's stat stage is lowered instead. This effect does not happen if this Pokemon's stat stage was already -6. If the other Pokemon has a substitute, neither Pokemon has its stat stage lowered.",
+        "desc_cn": "自身能力等级被对手降低时，改为降低对手对应能力等级。"
     },
     "Insomnia": {
         "name_cn": "不眠",
-        "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it."
+        "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+        "desc_cn": "免疫睡眠状态。获得该特性时可治愈睡眠。"
     },
     "Cheek Pouch": {
         "name_cn": "颊囊",
-        "desc": "If this Pokemon eats a held Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect. This effect can also activate after the effects of Bug Bite, Fling, Pluck, Stuff Cheeks, and Teatime if the eaten Berry had an effect on this Pokemon."
+        "desc": "If this Pokemon eats a held Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect. This effect can also activate after the effects of Bug Bite, Fling, Pluck, Stuff Cheeks, and Teatime if the eaten Berry had an effect on this Pokemon.",
+        "desc_cn": "食用树果后额外恢复1/3最大HP。"
     },
     "Sand Force": {
         "name_cn": "沙之力",
-        "desc": "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm."
+        "desc": "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+        "desc_cn": "沙暴天气下，地面、岩石和钢属性招式威力×1.3。不受沙暴伤害。"
     },
     "Multiscale": {
         "name_cn": "多重鳞片",
-        "desc": "If this Pokemon is at full HP, damage taken from attacks is halved."
+        "desc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+        "desc_cn": "HP全满时，受到的伤害减半。"
     },
     "Ripen": {
         "name_cn": "熟成",
-        "desc": "When this Pokemon eats certain Berries, the effects are doubled. Berries that restore HP or PP have the amount doubled, Berries that raise stat stages have the amount doubled, Berries that halve damage taken quarter it instead, and a Jaboca Berry or Rowap Berry has the attacker lose 1/4 of its maximum HP, rounded down."
+        "desc": "When this Pokemon eats certain Berries, the effects are doubled. Berries that restore HP or PP have the amount doubled, Berries that raise stat stages have the amount doubled, Berries that halve damage taken quarter it instead, and a Jaboca Berry or Rowap Berry has the attacker lose 1/4 of its maximum HP, rounded down.",
+        "desc_cn": "树果效果翻倍（回复量翻倍，减伤变为1/4，伤害变为1/4）。"
     },
     "Effect Spore": {
         "name_cn": "孢子",
-        "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep."
+        "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep.",
+        "desc_cn": "对手接触自身时，有30%概率中毒、麻痹或睡眠。"
     },
     "Mega Launcher": {
         "name_cn": "超级发射器",
-        "desc": "This Pokemon's pulse moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down."
+        "desc": "This Pokemon's pulse moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down.",
+        "desc_cn": "自身脉冲波类招式威力×1.5。治愈波动恢复量变为3/4。"
     },
     "Drought": {
         "name_cn": "日照",
-        "desc": "On switch-in, this Pokemon summons Sunny Day."
+        "desc": "On switch-in, this Pokemon summons Sunny Day.",
+        "desc_cn": "上场时，天气变为大晴天。"
     },
     "Curious Medicine": {
         "name_cn": "怪药",
-        "desc": "On switch-in, this Pokemon's allies have their stat stages reset to 0."
+        "desc": "On switch-in, this Pokemon's allies have their stat stages reset to 0.",
+        "desc_cn": "上场时，自身场上同伴的能力等级恢复为0。"
     },
     "Storm Drain": {
         "name_cn": "引水",
-        "desc": "This Pokemon is immune to Water-type moves and raises its Special Attack by 1 stage when hit by a Water-type move. If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer."
+        "desc": "This Pokemon is immune to Water-type moves and raises its Special Attack by 1 stage when hit by a Water-type move. If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer.",
+        "desc_cn": "免疫水属性招式，受到水属性攻击时特攻提升1级。吸引单体水属性招式。"
     },
     "Galvanize": {
         "name_cn": "电气皮肤",
-        "desc": "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身一般属性招式变为电属性，威力×1.2。"
     },
     "Quick Feet": {
         "name_cn": "飞毛腿",
-        "desc": "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed."
+        "desc": "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed.",
+        "desc_cn": "处于异常状态时，速度×1.5。无视麻痹减半速度的效果。"
     },
     "Dragon's Maw": {
         "name_cn": "龙颚",
-        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack."
+        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack.",
+        "desc_cn": "使用龙属性招式时，威力×1.5。"
     },
     "Battle Bond": {
         "name_cn": "牵绊变身",
-        "desc": "If this Pokemon is a Greninja, its Attack, Special Attack, and Speed are raised by 1 stage if it attacks and knocks out another Pokemon. This effect can only happen once per battle."
+        "desc": "If this Pokemon is a Greninja, its Attack, Special Attack, and Speed are raised by 1 stage if it attacks and knocks out another Pokemon. This effect can only happen once per battle.",
+        "desc_cn": "甲贺忍蛙击倒对手后，物攻、特攻、速度各提升1级。每场战斗仅一次。"
     },
     "Grim Neigh": {
         "name_cn": "漆黑嘶鸣",
-        "desc": "This Pokemon's Special Attack is raised by 1 stage if it attacks and knocks out another Pokemon."
+        "desc": "This Pokemon's Special Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+        "desc_cn": "击倒对手后，特攻提升1级。"
     },
     "Analytic": {
         "name_cn": "分析",
-        "desc": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight."
+        "desc": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
+        "desc_cn": "最后行动时，招式威力×1.3。"
     },
     "Misty Surge": {
         "name_cn": "薄雾制造者",
-        "desc": "On switch-in, this Pokemon summons Misty Terrain."
+        "desc": "On switch-in, this Pokemon summons Misty Terrain.",
+        "desc_cn": "上场时，展开薄雾场地。"
     },
     "Ice Scales": {
         "name_cn": "冰鳞粉",
-        "desc": "This Pokemon receives 1/2 damage from special attacks."
+        "desc": "This Pokemon receives 1/2 damage from special attacks.",
+        "desc_cn": "受到特殊攻击伤害减半。"
     },
     "Big Pecks": {
         "name_cn": "健壮胸肌",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage.",
+        "desc_cn": "对手无法降低自身物防等级。"
     },
     "Guard Dog": {
         "name_cn": "看门犬",
-        "desc": "This Pokemon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokemon cannot be forced to switch out by another Pokemon's attack or item."
+        "desc": "This Pokemon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+        "desc_cn": "免疫威吓并反提升物攻1级。无法被逼换下场。"
     },
     "Huge Power": {
         "name_cn": "大力士",
-        "desc": "This Pokemon's Attack is doubled."
+        "desc": "This Pokemon's Attack is doubled.",
+        "desc_cn": "自身物攻翻倍。"
     },
     "Stalwart": {
         "name_cn": "坚毅",
-        "desc": "This Pokemon's moves cannot be redirected to a different target by any effect."
+        "desc": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+        "desc_cn": "自身的招式不会被任何效果改变目标。"
     },
     "Water Veil": {
         "name_cn": "水幕",
-        "desc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it."
+        "desc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+        "desc_cn": "免疫灼伤状态。获得该特性时可治愈灼伤。"
     },
     "Victory Star": {
         "name_cn": "胜利之星",
-        "desc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1."
+        "desc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1.",
+        "desc_cn": "自身和同伴的招式命中率×1.1。"
     },
     "Battle Armor": {
         "name_cn": "战斗盔甲",
-        "desc": "This Pokemon cannot be struck by a critical hit."
+        "desc": "This Pokemon cannot be struck by a critical hit.",
+        "desc_cn": "不会被击中要害。"
     },
     "Pickup": {
         "name_cn": "捡拾",
-        "desc": "At the end of each turn, if this Pokemon is not holding an item and at least one adjacent Pokemon used an item during this turn, one of those Pokemon is selected at random and this Pokemon obtains that Pokemon's last used item. An item is not considered the last used if it was a popped Air Balloon, if the item was picked up by another Pokemon with this Ability, or if the item was lost to Bug Bite, Corrosive Gas, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be picked up."
+        "desc": "At the end of each turn, if this Pokemon is not holding an item and at least one adjacent Pokemon used an item during this turn, one of those Pokemon is selected at random and this Pokemon obtains that Pokemon's last used item. An item is not considered the last used if it was a popped Air Balloon, if the item was picked up by another Pokemon with this Ability, or if the item was lost to Bug Bite, Corrosive Gas, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be picked up.",
+        "desc_cn": "回合结束时，随机拾取场上其他宝可梦使用的道具。"
     },
     "Competitive": {
         "name_cn": "好胜",
-        "desc": "This Pokemon's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon."
+        "desc": "This Pokemon's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
+        "desc_cn": "自身能力等级被对手降低时，特攻提升2级。"
     },
     "Desolate Land": {
         "name_cn": "终结之地",
-        "desc": "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities."
+        "desc": "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.",
+        "desc_cn": "上场时变为始源之地，大晴天效果加上无效水属性伤害。不可被天气招式覆盖。"
     },
     "Gluttony": {
         "name_cn": "贪吃鬼",
-        "desc": "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead."
+        "desc": "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.",
+        "desc_cn": "HP低于1/2时即可食用通常在HP低于1/4时发动的树果。"
     },
     "Friend Guard": {
         "name_cn": "友情防守",
-        "desc": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks."
+        "desc": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks.",
+        "desc_cn": "自身场上同伴受到的伤害变为3/4。"
     },
     "Water Bubble": {
         "name_cn": "水泡",
-        "desc": "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it."
+        "desc": "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+        "desc_cn": "使用水属性招式时威力×2。受到火属性攻击时伤害减半。免疫灼伤。"
     },
     "Blaze": {
         "name_cn": "猛火",
-        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack."
+        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+        "desc_cn": "HP低于1/3时，使用火属性招式的威力×1.5。"
     },
     "Thermal Exchange": {
         "name_cn": "热交换",
-        "desc": "This Pokemon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokemon cannot be burned. Gaining this Ability while burned cures it."
+        "desc": "This Pokemon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+        "desc_cn": "受到火属性攻击后物攻提升1级。免疫灼伤。"
     },
     "Sap Sipper": {
         "name_cn": "食草",
-        "desc": "This Pokemon is immune to Grass-type moves and raises its Attack by 1 stage when hit by a Grass-type move."
+        "desc": "This Pokemon is immune to Grass-type moves and raises its Attack by 1 stage when hit by a Grass-type move.",
+        "desc_cn": "免疫草属性招式，受到草属性攻击时物攻提升1级。"
     },
     "Telepathy": {
         "name_cn": "心灵感应",
-        "desc": "This Pokemon does not take damage from attacks made by its allies."
+        "desc": "This Pokemon does not take damage from attacks made by its allies.",
+        "desc_cn": "不会受到同伴攻击的伤害。"
     },
     "Solid Rock": {
         "name_cn": "坚硬岩石",
-        "desc": "This Pokemon receives 3/4 damage from supereffective attacks."
+        "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+        "desc_cn": "受到效果绝佳攻击的伤害变为3/4。"
     },
     "Quick Draw": {
         "name_cn": "速击",
-        "desc": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves."
+        "desc": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+        "desc_cn": "30%概率在同优先度中先手行动。"
     },
     "Grassy Surge": {
         "name_cn": "青草制造者",
-        "desc": "On switch-in, this Pokemon summons Grassy Terrain."
+        "desc": "On switch-in, this Pokemon summons Grassy Terrain.",
+        "desc_cn": "上场时，展开青草场地。"
     },
     "Merciless": {
         "name_cn": "不仁不义",
-        "desc": "This Pokemon's attacks are critical hits if the target is poisoned."
+        "desc": "This Pokemon's attacks are critical hits if the target is poisoned.",
+        "desc_cn": "对手中毒时，自身攻击必定击中要害。"
     },
     "Protosynthesis": {
         "name_cn": "古代活性",
-        "desc": "If Sunny Day is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active."
+        "desc": "If Sunny Day is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active.",
+        "desc_cn": "大晴天时或携带驱劲能量时，自身最高能力×1.3（速度则×1.5）。"
     },
     "Orichalcum Pulse": {
         "name_cn": "绯红脉动",
-        "desc": "On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x."
+        "desc": "On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.",
+        "desc_cn": "上场时展开大晴天。大晴天时物攻×1.333。"
     },
     "Infiltrator": {
         "name_cn": "穿透",
-        "desc": "This Pokemon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, Mist, and Aurora Veil."
+        "desc": "This Pokemon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, Mist, and Aurora Veil.",
+        "desc_cn": "自身招式无视替身及对手的光墙、反射壁、神秘守护、薄雾、极光幕。"
     },
     "Illusion": {
         "name_cn": "幻觉",
-        "desc": "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon."
+        "desc": "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
+        "desc_cn": "上场时变为队伍最后一只未濒死宝可梦的外观，受到伤害后恢复原样。"
     },
     "Opportunist": {
         "name_cn": "跟风",
-        "desc": "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect."
+        "desc": "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect.",
+        "desc_cn": "对手能力等级提升时，自身复制相同的效果。"
     },
     "Neuroforce": {
         "name_cn": "脑核之力",
-        "desc": "This Pokemon's attacks that are super effective against the target have their damage multiplied by 1.25."
+        "desc": "This Pokemon's attacks that are super effective against the target have their damage multiplied by 1.25.",
+        "desc_cn": "效果绝佳的招式伤害×1.25。"
     },
     "Wind Rider": {
         "name_cn": "乘风",
-        "desc": "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokemon's side."
+        "desc": "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokemon's side.",
+        "desc_cn": "免疫风类招式。受到风类招式或顺风开始时，物攻提升1级。"
     },
     "Skill Link": {
         "name_cn": "连续攻击",
-        "desc": "This Pokemon's multi-hit attacks always hit the maximum number of times. Triple Kick and Triple Axel do not check accuracy for the second and third hits."
+        "desc": "This Pokemon's multi-hit attacks always hit the maximum number of times. Triple Kick and Triple Axel do not check accuracy for the second and third hits.",
+        "desc_cn": "多段攻击招式必定命中最大次数。三连踢和三连冻不检查第二、三次命中。"
     },
     "Flower Veil": {
         "name_cn": "花幕",
-        "desc": "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a non-volatile status condition inflicted on them by other Pokemon."
+        "desc": "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a non-volatile status condition inflicted on them by other Pokemon.",
+        "desc_cn": "我方草属性宝可梦的能力等级不会被降低，也不会被附加异常状态。"
     },
     "Levitate": {
         "name_cn": "飘浮",
-        "desc": "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability."
+        "desc": "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability.",
+        "desc_cn": "免疫地面属性攻击和撒菱、毒菱、黏黏网及沙穴的效果。重力、扎根等效果会抵消。"
     },
     "Anger Point": {
         "name_cn": "愤怒穴位",
-        "desc": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages."
+        "desc": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
+        "desc_cn": "受到击中要害时，物攻直接提升至最高（+6级）。"
     },
     "Heatproof": {
         "name_cn": "耐热",
-        "desc": "If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon takes half of the usual burn damage, rounded down."
+        "desc": "If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon takes half of the usual burn damage, rounded down.",
+        "desc_cn": "受到火属性攻击时伤害减半。灼伤伤害减半。"
     },
     "Poison Heal": {
         "name_cn": "毒疗",
-        "desc": "If this Pokemon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP."
+        "desc": "If this Pokemon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
+        "desc_cn": "中毒时每回合恢复1/8最大HP，而非受到伤害。"
     },
     "Unaware": {
         "name_cn": "纯朴",
-        "desc": "This Pokemon ignores other Pokemon's Attack, Special Attack, and accuracy stat stages when taking damage, and ignores other Pokemon's Defense, Special Defense, and evasiveness stat stages when dealing damage."
+        "desc": "This Pokemon ignores other Pokemon's Attack, Special Attack, and accuracy stat stages when taking damage, and ignores other Pokemon's Defense, Special Defense, and evasiveness stat stages when dealing damage.",
+        "desc_cn": "受到攻击时无视对手的物攻、特攻、命中等级；攻击时无视对手的物防、特防、回避等级。"
     },
     "Slow Start": {
         "name_cn": "慢启动",
-        "desc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation."
+        "desc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
+        "desc_cn": "上场后5回合内物攻和速度减半。"
     },
     "Gooey": {
         "name_cn": "黏滑",
-        "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage."
+        "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+        "desc_cn": "与自身接触的宝可梦速度降低1级。"
     },
     "Liquid Ooze": {
         "name_cn": "污泥浆",
-        "desc": "This Pokemon damages those draining HP from it for as much as they would heal. This effect does not consider Dream Eater."
+        "desc": "This Pokemon damages those draining HP from it for as much as they would heal. This effect does not consider Dream Eater.",
+        "desc_cn": "对手使用吸取类招式时，受到等量伤害而非恢复HP。"
     },
     "Healer": {
         "name_cn": "治愈之心",
-        "desc": "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn."
+        "desc": "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
+        "desc_cn": "每回合结束时，30%概率治愈同伴的异常状态。"
     },
     "Corrosion": {
         "name_cn": "腐蚀",
-        "desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing."
+        "desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+        "desc_cn": "可以对任何属性的宝可梦施加中毒或剧毒。"
     },
     "Sniper": {
         "name_cn": "狙击手",
-        "desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5."
+        "desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5.",
+        "desc_cn": "击中要害时，伤害×1.5。"
     },
     "Run Away": {
         "name_cn": "逃跑",
-        "desc": "No competitive use."
+        "desc": "No competitive use.",
+        "desc_cn": "对战中无效果。"
     },
     "Sweet Veil": {
         "name_cn": "甜幕",
-        "desc": "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep."
+        "desc": "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.",
+        "desc_cn": "自身和同伴不会睡眠。无法使用睡觉或被哈欠催眠。"
     },
     "Symbiosis": {
         "name_cn": "共生",
-        "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off, or if the ally used an Eject Button or Eject Pack."
+        "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off, or if the ally used an Eject Button or Eject Pack.",
+        "desc_cn": "同伴使用道具时，立即将自身道具交给同伴。"
     },
     "Magic Guard": {
         "name_cn": "魔法防守",
-        "desc": "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage."
+        "desc": "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+        "desc_cn": "只受直接攻击伤害。咒和替身使用、大蛇瞪眼、抓狂反伤、混乱伤害视为直接伤害。"
     },
     "Aura Break": {
         "name_cn": "气场破坏",
-        "desc": "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33."
+        "desc": "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.",
+        "desc_cn": "反转暗黑气场和妖精气场的效果，对应属性招式威力变为×0.75。"
     },
     "Dancer": {
         "name_cn": "舞者",
-        "desc": "After another Pokemon uses a dance move, this Pokemon uses the same move. The copied move is subject to all effects that can prevent a move from being executed. A move used through this Ability cannot be copied again by other Pokemon with this Ability."
+        "desc": "After another Pokemon uses a dance move, this Pokemon uses the same move. The copied move is subject to all effects that can prevent a move from being executed. A move used through this Ability cannot be copied again by other Pokemon with this Ability.",
+        "desc_cn": "其他宝可梦使用跳舞招式后，自身也使用相同招式。"
     },
     "Pixilate": {
         "name_cn": "妖精皮肤",
-        "desc": "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身一般属性招式变为妖精属性，威力×1.2。"
     },
     "Air Lock": {
         "name_cn": "气闸",
-        "desc": "While this Pokemon is active, the effects of weather conditions are disabled."
+        "desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
+        "desc_cn": "自身在场时，天气效果无效化。"
     },
     "Disguise": {
         "name_cn": "画皮",
-        "desc": "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise."
+        "desc": "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
+        "desc_cn": "谜拟丘第一次受到攻击伤害为0，随后变为破碎形态并损失1/8HP。"
     },
     "Volt Absorb": {
         "name_cn": "蓄电",
-        "desc": "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move."
+        "desc": "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move.",
+        "desc_cn": "免疫电属性招式，受到电属性攻击时恢复1/4最大HP。"
     },
     "Fur Coat": {
         "name_cn": "毛皮大衣",
-        "desc": "This Pokemon's Defense is doubled."
+        "desc": "This Pokemon's Defense is doubled.",
+        "desc_cn": "自身物防翻倍。"
     },
     "Wandering Spirit": {
         "name_cn": "游魂",
-        "desc": "Pokemon making contact with this Pokemon have their Ability swapped with this one. Does not affect Pokemon with the Abilities As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Wonder Guard, Zen Mode, or Zero to Hero."
+        "desc": "Pokemon making contact with this Pokemon have their Ability swapped with this one. Does not affect Pokemon with the Abilities As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Wonder Guard, Zen Mode, or Zero to Hero.",
+        "desc_cn": "与自身接触的宝可梦与其互换特性。"
     },
     "Prism Armor": {
         "name_cn": "棱镜装甲",
-        "desc": "This Pokemon receives 3/4 damage from supereffective attacks."
+        "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+        "desc_cn": "受到效果绝佳攻击的伤害变为3/4。"
     },
     "Solar Power": {
         "name_cn": "太阳之力",
-        "desc": "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella."
+        "desc": "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "大晴天时，特攻×1.5，每回合损失1/8最大HP。"
     },
     "Well-Baked Body": {
         "name_cn": "焦香之躯",
-        "desc": "This Pokemon is immune to Fire-type moves and raises its Defense by 2 stages when hit by a Fire-type move."
+        "desc": "This Pokemon is immune to Fire-type moves and raises its Defense by 2 stages when hit by a Fire-type move.",
+        "desc_cn": "免疫火属性招式，受到火属性攻击时物防提升2级。"
     },
     "Rough Skin": {
         "name_cn": "粗糙皮肤",
-        "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down."
+        "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
+        "desc_cn": "与自身接触的宝可梦损失1/8最大HP。"
     },
     "Sturdy": {
         "name_cn": "结实",
-        "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon."
+        "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
+        "desc_cn": "HP全满时，受到致命伤害保留1HP。免疫一击必杀招式。"
     },
     "Filter": {
         "name_cn": "过滤",
-        "desc": "This Pokemon receives 3/4 damage from supereffective attacks."
+        "desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+        "desc_cn": "受到效果绝佳攻击的伤害变为3/4。"
     },
     "Sand Rush": {
         "name_cn": "拨沙",
-        "desc": "If Sandstorm is active, this Pokemon's Speed is doubled. This Pokemon takes no damage from Sandstorm."
+        "desc": "If Sandstorm is active, this Pokemon's Speed is doubled. This Pokemon takes no damage from Sandstorm.",
+        "desc_cn": "沙暴天气下，自身速度翻倍。不受沙暴伤害。"
     },
     "Poison Point": {
         "name_cn": "毒刺",
-        "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned. This effect does not happen if this Pokemon did not lose HP from the attack."
+        "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned. This effect does not happen if this Pokemon did not lose HP from the attack.",
+        "desc_cn": "对手接触自身时，有30%概率中毒。"
     },
     "Flame Body": {
         "name_cn": "火焰之躯",
-        "desc": "30% chance a Pokemon making contact with this Pokemon will be burned. This effect does not happen if this Pokemon did not lose HP from the attack."
+        "desc": "30% chance a Pokemon making contact with this Pokemon will be burned. This effect does not happen if this Pokemon did not lose HP from the attack.",
+        "desc_cn": "对手接触自身时，有30%概率灼伤。"
     },
     "Psychic Surge": {
         "name_cn": "精神制造者",
-        "desc": "On switch-in, this Pokemon summons Psychic Terrain."
+        "desc": "On switch-in, this Pokemon summons Psychic Terrain.",
+        "desc_cn": "上场时，展开精神场地。"
     },
     "Unnerve": {
         "name_cn": "紧张感",
-        "desc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect."
+        "desc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect.",
+        "desc_cn": "自身在场时，对手无法食用树果。"
     },
     "Mimicry": {
         "name_cn": "拟态",
-        "desc": "This Pokemon's types change to match the active Terrain when this Pokemon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokemon's types become the original types for its species."
+        "desc": "This Pokemon's types change to match the active Terrain when this Pokemon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokemon's types become the original types for its species.",
+        "desc_cn": "获得该特性或场地出现时，自身属性变为场地对应属性（电→电、草→草、薄雾→妖精、精神→超能）。"
     },
     "Earth Eater": {
         "name_cn": "食土",
-        "desc": "This Pokemon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move."
+        "desc": "This Pokemon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move.",
+        "desc_cn": "免疫地面属性招式，受到地面属性攻击时恢复1/4最大HP。"
     },
     "No Guard": {
         "name_cn": "无防守",
-        "desc": "Every move used by or against this Pokemon will always hit."
+        "desc": "Every move used by or against this Pokemon will always hit.",
+        "desc_cn": "自身参与的所有招式必定命中。"
     },
     "Dry Skin": {
         "name_cn": "干燥皮肤",
-        "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokemon. At the end of each turn, this Pokemon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. The weather effects are prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokemon. At the end of each turn, this Pokemon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. The weather effects are prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "免疫水属性招式，受到水属性攻击时恢复1/4最大HP。火属性攻击伤害×1.25。雨天每回合恢复1/8HP，晴天每回合损失1/8HP。"
     },
     "Ice Body": {
         "name_cn": "冰冻之躯",
-        "desc": "If Snow is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn."
+        "desc": "If Snow is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
+        "desc_cn": "冰雹天气下，每回合恢复1/16最大HP。"
     },
     "Steelworker": {
         "name_cn": "钢能力者",
-        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack."
+        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack.",
+        "desc_cn": "使用钢属性招式时，威力×1.5。"
     },
     "Harvest": {
         "name_cn": "收获",
-        "desc": "If the last item this Pokemon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%."
+        "desc": "If the last item this Pokemon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.",
+        "desc_cn": "使用过的树果有50%概率在回合末恢复；大晴天时100%恢复。"
     },
     "Steadfast": {
         "name_cn": "不屈之心",
-        "desc": "If this Pokemon flinches, its Speed is raised by 1 stage."
+        "desc": "If this Pokemon flinches, its Speed is raised by 1 stage.",
+        "desc_cn": "畏缩时，速度提升1级。"
     },
     "Stance Change": {
         "name_cn": "战斗切换",
-        "desc": "If this Pokemon is an Aegislash, it changes to Blade Forme before using an attacking move, and changes to Shield Forme before using King's Shield."
+        "desc": "If this Pokemon is an Aegislash, it changes to Blade Forme before using an attacking move, and changes to Shield Forme before using King's Shield.",
+        "desc_cn": "坚盾剑怪使用攻击招式时变为刀形态，使用王者盾牌时变为盾形态。"
     },
     "Innards Out": {
         "name_cn": "飞出的内在物",
-        "desc": "If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon."
+        "desc": "If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon.",
+        "desc_cn": "被招式击倒时，攻击方受到等同于自身所受伤害的HP损失。"
     },
     "Sticky Hold": {
         "name_cn": "黏着",
-        "desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability."
+        "desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
+        "desc_cn": "不会因对手招式或特性失去道具。粘粘棒除外。"
     },
     "Electric Surge": {
         "name_cn": "电气制造者",
-        "desc": "On switch-in, this Pokemon summons Electric Terrain."
+        "desc": "On switch-in, this Pokemon summons Electric Terrain.",
+        "desc_cn": "上场时，展开电气场地。"
     },
     "Transistor": {
         "name_cn": "电晶体",
-        "desc": "This Pokemon's offensive stat is multiplied by 1.3 while using an Electric-type attack."
+        "desc": "This Pokemon's offensive stat is multiplied by 1.3 while using an Electric-type attack.",
+        "desc_cn": "使用电属性招式时，威力×1.3。"
     },
     "Dauntless Shield": {
         "name_cn": "不屈之盾",
-        "desc": "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle."
+        "desc": "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
+        "desc_cn": "上场时，物防提升1级。每场战斗仅一次。"
     },
     "Chilling Neigh": {
         "name_cn": "苍白嘶鸣",
-        "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon."
+        "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+        "desc_cn": "击倒对手后，物攻提升1级。"
     },
     "Inner Focus": {
         "name_cn": "精神力",
-        "desc": "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate Ability."
+        "desc": "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate Ability.",
+        "desc_cn": "不会畏缩。免疫威吓效果。"
     },
     "Dazzling": {
         "name_cn": "鲜艳之躯",
-        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect."
+        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
+        "desc_cn": "对手使用优先度招式攻击自身或同伴时无效。"
     },
     "Schooling": {
         "name_cn": "鱼群",
-        "desc": "On switch-in, if this Pokemon is a Wishiwashi that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to School Form. If it is in School Form and its HP drops to 1/4 of its maximum HP or less, it changes to Solo Form at the end of the turn. If it is in Solo Form and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to School Form."
+        "desc": "On switch-in, if this Pokemon is a Wishiwashi that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to School Form. If it is in School Form and its HP drops to 1/4 of its maximum HP or less, it changes to Solo Form at the end of the turn. If it is in Solo Form and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to School Form.",
+        "desc_cn": "吼鲸王等级20以上且HP高于1/4时变为鱼群形态，HP降至1/4以下时恢复单体形态。"
     },
     "Rattled": {
         "name_cn": "胆怯",
-        "desc": "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability."
+        "desc": "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
+        "desc_cn": "受到虫、恶、幽灵属性攻击或被威吓时，速度提升1级。"
     },
     "Adaptability": {
         "name_cn": "适应力",
-        "desc": "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5."
+        "desc": "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
+        "desc_cn": "与自身同属性的招式STAB从1.5倍提升为2倍。"
     },
     "Wonder Guard": {
         "name_cn": "神奇守护",
-        "desc": "This Pokemon can only be damaged by supereffective moves and indirect damage."
+        "desc": "This Pokemon can only be damaged by supereffective moves and indirect damage.",
+        "desc_cn": "只能被效果绝佳的招式和间接伤害所伤害。"
     },
     "Delta Stream": {
         "name_cn": "德尔塔气流",
-        "desc": "On switch-in, the weather becomes Delta Stream, which removes the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Desolate Land or Primordial Sea Abilities."
+        "desc": "On switch-in, the weather becomes Delta Stream, which removes the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.",
+        "desc_cn": "上场时变为德尔塔气流，消除飞行属性宝可梦的弱点。"
     },
     "Keen Eye": {
         "name_cn": "锐利目光",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+        "desc_cn": "对手无法降低自身命中等级。无视对手的回避等级。"
     },
     "Wind Power": {
         "name_cn": "风力发电",
-        "desc": "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side."
+        "desc": "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
+        "desc_cn": "受到风类招式或顺风开始时，获得蓄电效果。"
     },
     "Bad Dreams": {
         "name_cn": "梦魇",
-        "desc": "Causes opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep."
+        "desc": "Causes opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep.",
+        "desc_cn": "对手处于睡眠状态时，每回合损失1/8最大HP。"
     },
     "Shell Armor": {
         "name_cn": "硬壳盔甲",
-        "desc": "This Pokemon cannot be struck by a critical hit."
+        "desc": "This Pokemon cannot be struck by a critical hit.",
+        "desc_cn": "不会被击中要害。"
     },
     "Cloud Nine": {
         "name_cn": "无关天气",
-        "desc": "While this Pokemon is active, the effects of weather conditions are disabled."
+        "desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
+        "desc_cn": "自身在场时，天气效果无效化。"
     },
     "Sand Stream": {
         "name_cn": "扬沙",
-        "desc": "On switch-in, this Pokemon summons Sandstorm."
+        "desc": "On switch-in, this Pokemon summons Sandstorm.",
+        "desc_cn": "上场时，天气变为沙暴。"
     },
     "Oblivious": {
         "name_cn": "迟钝",
-        "desc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability."
+        "desc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
+        "desc_cn": "免疫迷住和挑衅状态。免疫威吓效果。"
     },
     "Tinted Lens": {
         "name_cn": "有色眼镜",
-        "desc": "This Pokemon's attacks that are not very effective on a target deal double damage."
+        "desc": "This Pokemon's attacks that are not very effective on a target deal double damage.",
+        "desc_cn": "效果不绝佳的招式伤害×2。"
     },
     "Propeller Tail": {
         "name_cn": "螺旋尾鳍",
-        "desc": "This Pokemon's moves cannot be redirected to a different target by any effect."
+        "desc": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+        "desc_cn": "自身的招式不会被任何效果改变目标。"
     },
     "Illuminate": {
         "name_cn": "发光",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+        "desc_cn": "对手无法降低自身命中等级。无视对手的回避等级。"
     },
     "Shield Dust": {
         "name_cn": "鳞粉",
-        "desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause this Pokemon to flinch, cause this Pokemon's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if this Pokemon is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against this Pokemon."
+        "desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause this Pokemon to flinch, cause this Pokemon's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if this Pokemon is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against this Pokemon.",
+        "desc_cn": "免疫对手攻击的追加效果。"
     },
     "Klutz": {
         "name_cn": "笨拙",
-        "desc": "This Pokemon's held item has no effect. This Pokemon cannot use Fling successfully. Macho Brace, Power Anklet, Power Band, Power Belt, Power Bracer, Power Lens, and Power Weight still have their effects."
+        "desc": "This Pokemon's held item has no effect. This Pokemon cannot use Fling successfully. Macho Brace, Power Anklet, Power Band, Power Belt, Power Bracer, Power Lens, and Power Weight still have their effects.",
+        "desc_cn": "自身道具无效。无法成功使用投掷。力量负重等道具除外。"
     },
     "White Smoke": {
         "name_cn": "白色烟雾",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+        "desc_cn": "对手无法降低自身的能力等级。"
     },
     "Screen Cleaner": {
         "name_cn": "除障",
-        "desc": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides."
+        "desc": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
+        "desc_cn": "上场时，双方的光墙、反射壁和极光幕全部解除。"
     },
     "Plus": {
         "name_cn": "正电",
-        "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5."
+        "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+        "desc_cn": "同伴有正电或负电特性时，自身特攻×1.5。"
     },
     "Snow Cloak": {
         "name_cn": "雪隐",
-        "desc": "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8."
+        "desc": "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8.",
+        "desc_cn": "冰雹天气下，对手招式的命中率×0.8。"
     },
     "Thick Fat": {
         "name_cn": "厚脂肪",
-        "desc": "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon."
+        "desc": "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+        "desc_cn": "受到火或冰属性攻击时，伤害减半。"
     },
     "Shadow Tag": {
         "name_cn": "踩影",
-        "desc": "Prevents opposing Pokemon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability."
+        "desc": "Prevents opposing Pokemon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability.",
+        "desc_cn": "对手无法替换或逃走（携带洞穴之壳、幽灵属性或同特性除外）。"
     },
     "Prankster": {
         "name_cn": "恶作剧之心",
-        "desc": "This Pokemon's non-damaging moves have their priority increased by 1. Opposing Dark-type Pokemon are immune to these moves, and any move called by these moves, if the resulting user of the move has this Ability."
+        "desc": "This Pokemon's non-damaging moves have their priority increased by 1. Opposing Dark-type Pokemon are immune to these moves, and any move called by these moves, if the resulting user of the move has this Ability.",
+        "desc_cn": "自身变化招式优先度+1。恶属性宝可梦免疫这些招式。"
     },
     "Vital Spirit": {
         "name_cn": "干劲",
-        "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it."
+        "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+        "desc_cn": "免疫睡眠状态。获得该特性时可治愈睡眠。"
     },
     "Natural Cure": {
         "name_cn": "自然回复",
-        "desc": "This Pokemon has its non-volatile status condition cured when it switches out."
+        "desc": "This Pokemon has its non-volatile status condition cured when it switches out.",
+        "desc_cn": "替换下场时，治愈异常状态。"
     },
     "Aerilate": {
         "name_cn": "飞行皮肤",
-        "desc": "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身一般属性招式变为飞行属性，威力×1.2。"
     },
     "Shed Skin": {
         "name_cn": "蜕皮",
-        "desc": "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn."
+        "desc": "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
+        "desc_cn": "每回合结束时有33%概率治愈异常状态。"
     },
     "Water Compaction": {
         "name_cn": "遇水凝固",
-        "desc": "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move."
+        "desc": "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+        "desc_cn": "受到水属性攻击后，物防提升2级。"
     },
     "Stakeout": {
         "name_cn": "蹲守",
-        "desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn."
+        "desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn.",
+        "desc_cn": "对手刚上场时，自身对其威力×2。"
     },
     "Magma Armor": {
         "name_cn": "熔岩铠甲",
-        "desc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it."
+        "desc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
+        "desc_cn": "免疫冰冻状态。获得该特性时可治愈冰冻。"
     },
     "Weak Armor": {
         "name_cn": "碎裂铠甲",
-        "desc": "If a physical attack hits this Pokemon, its Defense is lowered by 1 stage and its Speed is raised by 2 stages."
+        "desc": "If a physical attack hits this Pokemon, its Defense is lowered by 1 stage and its Speed is raised by 2 stages.",
+        "desc_cn": "受到物理攻击时，物防降低1级，速度提升2级。"
     },
     "Anticipation": {
         "name_cn": "危险预知",
-        "desc": "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers Hidden Power to be its determined type, and every other move to be its original type."
+        "desc": "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers Hidden Power to be its determined type, and every other move to be its original type.",
+        "desc_cn": "上场时，察觉对手拥有对自身效果绝佳的招式或一击必杀招式。"
     },
     "Intimidate": {
         "name_cn": "威吓",
-        "desc": "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune."
+        "desc": "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+        "desc_cn": "上场时，降低对手物攻1级。精神力、迟钝、我行我素、胆量特性及替身后的宝可梦免疫。"
     },
     "Moxie": {
         "name_cn": "自信过度",
-        "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon."
+        "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+        "desc_cn": "击倒对手后，物攻提升1级。"
     },
     "Iron Barbs": {
         "name_cn": "铁刺",
-        "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down."
+        "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
+        "desc_cn": "与自身接触的宝可梦损失1/8最大HP。"
     },
     "Motor Drive": {
         "name_cn": "电气引擎",
-        "desc": "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move."
+        "desc": "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
+        "desc_cn": "免疫电属性招式，受到电属性攻击时速度提升1级。"
     },
     "Defiant": {
         "name_cn": "不服输",
-        "desc": "This Pokemon's Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon."
+        "desc": "This Pokemon's Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
+        "desc_cn": "自身能力等级被对手降低时，物攻提升2级。"
     },
     "Flower Gift": {
         "name_cn": "花之礼",
-        "desc": "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella."
+        "desc": "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "晴天时谢米变为阳光形态，自身和同伴物攻与特防×1.5。"
     },
     "Primordial Sea": {
         "name_cn": "始源之海",
-        "desc": "On switch-in, the weather becomes Primordial Sea, which includes all the effects of Rain Dance and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Desolate Land Abilities."
+        "desc": "On switch-in, the weather becomes Primordial Sea, which includes all the effects of Rain Dance and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Desolate Land Abilities.",
+        "desc_cn": "上场时变为始源之海，降雨效果加上无效火属性伤害。不可被天气招式覆盖。"
     },
     "Lingering Aroma": {
         "name_cn": "甩不掉的气味",
-        "desc": "Pokemon making contact with this Pokemon have their Ability changed to Lingering Aroma. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Lingering Aroma, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities."
+        "desc": "Pokemon making contact with this Pokemon have their Ability changed to Lingering Aroma. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Lingering Aroma, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities.",
+        "desc_cn": "与自身接触的宝可梦特性变为甩不掉的气味。"
     },
     "Normalize": {
         "name_cn": "一般皮肤",
-        "desc": "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type."
+        "desc": "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type.",
+        "desc_cn": "自身所有招式变为一般属性，威力×1.2。"
     },
     "Armor Tail": {
         "name_cn": "尾甲",
-        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect."
+        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
+        "desc_cn": "对手使用优先度招式攻击自身或同伴时无效。"
     },
     "Rocky Payload": {
         "name_cn": "搬岩",
-        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Rock-type attack."
+        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Rock-type attack.",
+        "desc_cn": "使用岩石属性招式时，威力×1.5。"
     },
     "Torrent": {
         "name_cn": "激流",
-        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack."
+        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack.",
+        "desc_cn": "HP低于1/3时，使用水属性招式的威力×1.5。"
     },
     "Bulletproof": {
         "name_cn": "防弹",
-        "desc": "This Pokemon is immune to bullet moves."
+        "desc": "This Pokemon is immune to bullet moves.",
+        "desc_cn": "免疫球类招式。"
     },
     "Rock Head": {
         "name_cn": "坚硬脑袋",
-        "desc": "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage."
+        "desc": "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
+        "desc_cn": "不会受到反作用力伤害（挣扎除外）。不包含生命宝珠和碰撞伤害。"
     },
     "Comatose": {
         "name_cn": "绝对睡眠",
-        "desc": "This Pokemon is considered to be asleep and cannot become affected by a non-volatile status condition or Yawn."
+        "desc": "This Pokemon is considered to be asleep and cannot become affected by a non-volatile status condition or Yawn.",
+        "desc_cn": "视为睡眠状态，免疫异常状态和哈欠。"
     },
     "Defeatist": {
         "name_cn": "软弱",
-        "desc": "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved."
+        "desc": "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
+        "desc_cn": "HP低于1/2时，物攻和特攻减半。"
     },
     "Zero to Hero": {
         "name_cn": "全能变身",
-        "desc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form."
+        "desc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
+        "desc_cn": "鳍鳍鼠从零形态替换下场后变为英雄形态。"
     },
     "Mummy": {
         "name_cn": "木乃伊",
-        "desc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities."
+        "desc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities.",
+        "desc_cn": "与自身接触的宝可梦特性变为木乃伊。"
     },
     "Intrepid Sword": {
         "name_cn": "不挠之剑",
-        "desc": "On switch-in, this Pokemon's Attack is raised by 1 stage. Once per battle."
+        "desc": "On switch-in, this Pokemon's Attack is raised by 1 stage. Once per battle.",
+        "desc_cn": "上场时，物攻提升1级。每场战斗仅一次。"
     },
     "Rain Dish": {
         "name_cn": "雨盘",
-        "desc": "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "雨天时，每回合恢复1/16最大HP。"
     },
     "Gorilla Tactics": {
         "name_cn": "一猩一意",
-        "desc": "This Pokemon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokemon is Dynamaxed."
+        "desc": "This Pokemon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokemon is Dynamaxed.",
+        "desc_cn": "物攻×1.5，但只能使用最初选择的招式。极巨化时无效。"
     },
     "Sword of Ruin": {
         "name_cn": "灾祸之剑",
-        "desc": "Active Pokemon without this Ability have their Defense multiplied by 0.75."
+        "desc": "Active Pokemon without this Ability have their Defense multiplied by 0.75.",
+        "desc_cn": "场上其他宝可梦的物防×0.75。"
     },
     "Flare Boost": {
         "name_cn": "受热激升",
-        "desc": "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5."
+        "desc": "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
+        "desc_cn": "灼伤状态下，自身特殊招式威力×1.5。"
     },
     "Imposter": {
         "name_cn": "变身者",
-        "desc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it. If there is no Pokemon at that position, this Pokemon does not Transform."
+        "desc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it. If there is no Pokemon at that position, this Pokemon does not Transform.",
+        "desc_cn": "上场时，变为对面宝可梦的拷贝形态。"
     },
     "Speed Boost": {
         "name_cn": "加速",
-        "desc": "This Pokemon's Speed is raised by 1 stage at the end of each full turn it has been on the field."
+        "desc": "This Pokemon's Speed is raised by 1 stage at the end of each full turn it has been on the field.",
+        "desc_cn": "每回合结束时，速度提升1级。"
     },
     "Grass Pelt": {
         "name_cn": "草之毛皮",
-        "desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5."
+        "desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
+        "desc_cn": "青草场地中，自身物防×1.5。"
     },
     "Unseen Fist": {
         "name_cn": "无形拳",
-        "desc": "This Pokemon's contact moves ignore the target's protection, except Max Guard."
+        "desc": "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
+        "desc_cn": "自身接触类招式可以穿过守住类招式（极巨防壁除外）。"
     },
     "Receiver": {
         "name_cn": "接球手",
-        "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, and Zero to Hero."
+        "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
+        "desc_cn": "同伴濒死时，复制其特性。"
     },
     "Lightning Rod": {
         "name_cn": "避雷针",
-        "desc": "This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer."
+        "desc": "This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer.",
+        "desc_cn": "免疫电属性招式，受到电属性攻击时特攻提升1级。吸引单体电属性招式。"
     },
     "Swarm": {
         "name_cn": "虫之预感",
-        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack."
+        "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack.",
+        "desc_cn": "HP低于1/3时，使用虫属性招式的威力×1.5。"
     },
     "Minus": {
         "name_cn": "负电",
-        "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5."
+        "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+        "desc_cn": "同伴有负电或正电特性时，自身特攻×1.5。"
     },
     "Static": {
         "name_cn": "静电",
-        "desc": "30% chance a Pokemon making contact with this Pokemon will be paralyzed. This effect does not happen if this Pokemon did not lose HP from the attack."
+        "desc": "30% chance a Pokemon making contact with this Pokemon will be paralyzed. This effect does not happen if this Pokemon did not lose HP from the attack.",
+        "desc_cn": "对手接触自身时，有30%概率麻痹。"
     },
     "Cursed Body": {
         "name_cn": "咒术之躯",
-        "desc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled."
+        "desc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
+        "desc_cn": "受到攻击时，有30%概率使该招式变为不可使用。"
     },
     "Electromorphosis": {
         "name_cn": "电力转换",
-        "desc": "This Pokemon gains the Charge effect when it takes a hit from an attack."
+        "desc": "This Pokemon gains the Charge effect when it takes a hit from an attack.",
+        "desc_cn": "受到攻击时，获得蓄电效果。"
     },
     "Magnet Pull": {
         "name_cn": "磁力",
-        "desc": "Prevents opposing Steel-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type."
+        "desc": "Prevents opposing Steel-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
+        "desc_cn": "对手的钢属性宝可梦无法替换或逃走（携带洞穴之壳或幽灵属性除外）。"
     },
     "Steam Engine": {
         "name_cn": "蒸汽机",
-        "desc": "This Pokemon's Speed is raised by 6 stages after it is damaged by a Fire- or Water-type move."
+        "desc": "This Pokemon's Speed is raised by 6 stages after it is damaged by a Fire- or Water-type move.",
+        "desc_cn": "受到火或水属性攻击后，速度提升6级。"
     },
     "Pickpocket": {
         "name_cn": "顺手牵羊",
-        "desc": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability."
+        "desc": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+        "desc_cn": "未携带道具时受到接触攻击，偷取攻击方的道具。"
     },
     "Vessel of Ruin": {
         "name_cn": "灾祸之鼎",
-        "desc": "Active Pokemon without this Ability have their Special Attack multiplied by 0.75."
+        "desc": "Active Pokemon without this Ability have their Special Attack multiplied by 0.75.",
+        "desc_cn": "场上其他宝可梦的特攻×0.75。"
     },
     "Hydration": {
         "name_cn": "湿润之躯",
-        "desc": "This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "雨天时，每回合结束治愈异常状态。"
     },
     "Chlorophyll": {
         "name_cn": "叶绿素",
-        "desc": "If Sunny Day is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "If Sunny Day is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "大晴天时，自身速度翻倍。"
     },
     "Unburden": {
         "name_cn": "轻装",
-        "desc": "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item."
+        "desc": "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item.",
+        "desc_cn": "失去道具后，自身速度翻倍。"
     },
     "Truant": {
         "name_cn": "懒惰",
-        "desc": "This Pokemon skips every other turn instead of using a move. If this Pokemon replaces a Pokemon that fainted during end-of-turn effects, its first turn will be skipped."
+        "desc": "This Pokemon skips every other turn instead of using a move. If this Pokemon replaces a Pokemon that fainted during end-of-turn effects, its first turn will be skipped.",
+        "desc_cn": "每隔一回合才能行动一次。"
     },
     "Good as Gold": {
         "name_cn": "黄金之躯",
-        "desc": "This Pokemon is immune to Status moves."
+        "desc": "This Pokemon is immune to Status moves.",
+        "desc_cn": "免疫变化招式。"
     },
     "Stench": {
         "name_cn": "恶臭",
-        "desc": "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch."
+        "desc": "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
+        "desc_cn": "自身攻击有10%概率使目标畏缩。"
     },
     "Commander": {
         "name_cn": "发号施令",
-        "desc": "If this Pokemon is a Tatsugiri and a Dondozo is an active ally, this Pokemon goes into the Dondozo's mouth. The Dondozo has its Attack, Special Attack, Speed, Defense, and Special Defense raised by 2 stages. During the effect, the Dondozo cannot be switched out, this Pokemon cannot select an action, and attacks targeted at this Pokemon will be avoided but it will still take indirect damage. If this Pokemon faints during the effect, a Pokemon can be switched in as a replacement but the Dondozo remains unable to be switched out. If the Dondozo faints during the effect, this Pokemon regains the ability to select an action."
+        "desc": "If this Pokemon is a Tatsugiri and a Dondozo is an active ally, this Pokemon goes into the Dondozo's mouth. The Dondozo has its Attack, Special Attack, Speed, Defense, and Special Defense raised by 2 stages. During the effect, the Dondozo cannot be switched out, this Pokemon cannot select an action, and attacks targeted at this Pokemon will be avoided but it will still take indirect damage. If this Pokemon faints during the effect, a Pokemon can be switched in as a replacement but the Dondozo remains unable to be switched out. If the Dondozo faints during the effect, this Pokemon regains the ability to select an action.",
+        "desc_cn": "吃吼霸与米立龙同时上场时，米立龙进入吃吼霸口中，吃吼霸全能力提升2级。"
     },
     "Triage": {
         "name_cn": "先行治疗",
-        "desc": "This Pokemon's healing moves have their priority increased by 3."
+        "desc": "This Pokemon's healing moves have their priority increased by 3.",
+        "desc_cn": "自身回复类招式的优先度+3。"
     },
     "Seed Sower": {
         "name_cn": "掉出种子",
-        "desc": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins."
+        "desc": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins.",
+        "desc_cn": "受到攻击时，展开青草场地。"
     },
     "Aroma Veil": {
         "name_cn": "芳香幕",
-        "desc": "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment."
+        "desc": "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment.",
+        "desc_cn": "自身和同伴免疫撒娇、再招、挑衅、挑衅等限制招式。"
     },
     "Guts": {
         "name_cn": "毅力",
-        "desc": "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokemon's physical attacks ignore the burn effect of halving damage."
+        "desc": "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokemon's physical attacks ignore the burn effect of halving damage.",
+        "desc_cn": "处于异常状态时，物攻×1.5。灼伤不减物攻伤害。"
     },
     "Own Tempo": {
         "name_cn": "我行我素",
-        "desc": "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability."
+        "desc": "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
+        "desc_cn": "免疫混乱状态。获得该特性时可治愈混乱。免疫威吓效果。"
     },
     "Color Change": {
         "name_cn": "变色",
-        "desc": "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability."
+        "desc": "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+        "desc_cn": "受到攻击后，自身属性变为该招式的属性。"
     },
     "Berserk": {
         "name_cn": "怒火冲天",
-        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability."
+        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+        "desc_cn": "HP高于1/2时受到伤害降至1/2以下，特攻提升1级。"
     },
     "Shadow Shield": {
         "name_cn": "幻影防守",
-        "desc": "If this Pokemon is at full HP, damage taken from attacks is halved."
+        "desc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+        "desc_cn": "HP全满时，受到的伤害减半。"
     },
     "Costar": {
         "name_cn": "同台共演",
-        "desc": "On switch-in, this Pokemon copies all of its ally's stat stage changes."
+        "desc": "On switch-in, this Pokemon copies all of its ally's stat stage changes.",
+        "desc_cn": "上场时，复制同伴所有能力等级变化。"
     },
     "Poison Touch": {
         "name_cn": "毒手",
-        "desc": "This Pokemon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance."
+        "desc": "This Pokemon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance.",
+        "desc_cn": "自身接触类招式有30%概率使对手中毒。"
     },
     "Sheer Force": {
         "name_cn": "强行",
-        "desc": "This Pokemon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Anger Shell, Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating."
+        "desc": "This Pokemon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Anger Shell, Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
+        "desc_cn": "带有追加效果的招式威力×1.3，但追加效果消失。同时消除生命宝珠反伤。"
     },
     "Clear Body": {
         "name_cn": "恒净之躯",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+        "desc_cn": "对手无法降低自身的能力等级。"
     },
     "Hustle": {
         "name_cn": "活力",
-        "desc": "This Pokemon's Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8."
+        "desc": "This Pokemon's Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8.",
+        "desc_cn": "物攻×1.5，但物理招式命中率×0.8。"
     },
     "Sand Spit": {
         "name_cn": "吐沙",
-        "desc": "When this Pokemon is hit by an attack, the effect of Sandstorm begins. This effect comes after the effects of Max and G-Max Moves."
+        "desc": "When this Pokemon is hit by an attack, the effect of Sandstorm begins. This effect comes after the effects of Max and G-Max Moves.",
+        "desc_cn": "受到攻击时，天气变为沙暴。"
     },
     "Toxic Debris": {
         "name_cn": "毒满地",
-        "desc": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side."
+        "desc": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side.",
+        "desc_cn": "受到物理攻击时，在对手场上设置毒菱。"
     },
     "Fairy Aura": {
         "name_cn": "妖精气场",
-        "desc": "While this Pokemon is active, the power of Fairy-type moves used by active Pokemon is multiplied by 1.33."
+        "desc": "While this Pokemon is active, the power of Fairy-type moves used by active Pokemon is multiplied by 1.33.",
+        "desc_cn": "自身在场时，场上所有宝可梦的妖精属性招式威力×1.33。"
     },
     "Stamina": {
         "name_cn": "持久力",
-        "desc": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move."
+        "desc": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move.",
+        "desc_cn": "受到攻击后，物防提升1级。"
     },
     "Simple": {
         "name_cn": "单纯",
-        "desc": "When one of this Pokemon's stat stages is raised or lowered, the amount is doubled. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Status Z-Move is used."
+        "desc": "When one of this Pokemon's stat stages is raised or lowered, the amount is doubled. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Status Z-Move is used.",
+        "desc_cn": "自身能力等级变化量翻倍。"
     },
     "Neutralizing Gas": {
         "name_cn": "化学变化气体",
-        "desc": "While this Pokemon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities."
+        "desc": "While this Pokemon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities.",
+        "desc_cn": "自身在场时，所有特性无效化。"
     },
     "Pressure": {
         "name_cn": "压迫感",
-        "desc": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokemon, but Sticky Web does not."
+        "desc": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokemon, but Sticky Web does not.",
+        "desc_cn": "自身被对手招式选为目标时，该招式额外消耗1PP。"
     },
     "Magician": {
         "name_cn": "魔术师",
-        "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight. If multiple targets are hit by an attack the item is stolen from the fastest Pokemon, while considering the effect of Trick Room and prioritizing opposing Pokemon before allies."
+        "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight. If multiple targets are hit by an attack the item is stolen from the fastest Pokemon, while considering the effect of Trick Room and prioritizing opposing Pokemon before allies.",
+        "desc_cn": "未携带道具时，攻击命中后偷取目标道具。"
     },
     "Justified": {
         "name_cn": "正义之心",
-        "desc": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move."
+        "desc": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+        "desc_cn": "受到恶属性攻击后，物攻提升1级。"
     },
     "Cud Chew": {
         "name_cn": "反刍",
-        "desc": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn."
+        "desc": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn.",
+        "desc_cn": "食用树果后，下回合末再食用一次。"
     },
     "Swift Swim": {
         "name_cn": "悠游自如",
-        "desc": "If Rain Dance is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "If Rain Dance is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "雨天时，自身速度翻倍。"
     },
     "Zen Mode": {
         "name_cn": "达摩模式",
-        "desc": "If this Pokemon is a Darmanitan or Galarian Darmanitan, it changes to Zen Mode if it has 1/2 or less of its maximum HP at the end of a turn. If Darmanitan's HP is above 1/2 of its maximum HP at the end of a turn, it changes back to Standard Mode."
+        "desc": "If this Pokemon is a Darmanitan or Galarian Darmanitan, it changes to Zen Mode if it has 1/2 or less of its maximum HP at the end of a turn. If Darmanitan's HP is above 1/2 of its maximum HP at the end of a turn, it changes back to Standard Mode.",
+        "desc_cn": "达摩狒狒HP低于1/2时变为达摩模式，高于1/2时恢复标准模式。"
     },
     "Mycelium Might": {
         "name_cn": "菌丝之力",
-        "desc": "This Pokemon's Status moves ignore certain Abilities of other Pokemon, and go last among Pokemon using the same or greater priority moves."
+        "desc": "This Pokemon's Status moves ignore certain Abilities of other Pokemon, and go last among Pokemon using the same or greater priority moves.",
+        "desc_cn": "自身变化招式无视对手防御特性，但在同优先度中最后行动。"
     },
     "Regenerator": {
         "name_cn": "再生力",
-        "desc": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out."
+        "desc": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
+        "desc_cn": "替换下场时，恢复1/3最大HP。"
     },
     "Reckless": {
         "name_cn": "舍身",
-        "desc": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle."
+        "desc": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
+        "desc_cn": "自身带有反作用力伤害的招式威力×1.2。"
     },
     "Tangled Feet": {
         "name_cn": "蹒跚",
-        "desc": "This Pokemon's evasiveness is doubled as long as it is confused."
+        "desc": "This Pokemon's evasiveness is doubled as long as it is confused.",
+        "desc_cn": "处于混乱状态时，回避率翻倍。"
     },
     "Rivalry": {
         "name_cn": "斗争心",
-        "desc": "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless."
+        "desc": "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
+        "desc_cn": "对手与自身同性别时威力×1.25，异性别时×0.75。无性别时无效。"
     },
     "Super Luck": {
         "name_cn": "超幸运",
-        "desc": "This Pokemon's critical hit ratio is raised by 1 stage."
+        "desc": "This Pokemon's critical hit ratio is raised by 1 stage.",
+        "desc_cn": "击中要害率提升1级。"
     },
     "Quark Drive": {
         "name_cn": "夸克充能",
-        "desc": "If Electric Terrain is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Electric Terrain, a held Booster Energy will not activate and the effect ends when Electric Terrain is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active."
+        "desc": "If Electric Terrain is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Electric Terrain, a held Booster Energy will not activate and the effect ends when Electric Terrain is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active.",
+        "desc_cn": "电气场地中或携带驱劲能量时，自身最高能力×1.3（速度则×1.5）。"
     },
     "Forecast": {
         "name_cn": "阴晴不定",
-        "desc": "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day."
+        "desc": "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
+        "desc_cn": "飘浮泡泡根据天气改变属性（沙暴除外）。"
     },
     "Mold Breaker": {
         "name_cn": "破格",
-        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon."
+        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
+        "desc_cn": "自身招式无视对手的防御类特性（如飘浮、结实、魔法防守等）。"
     },
     "Marvel Scale": {
         "name_cn": "神奇鳞片",
-        "desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5."
+        "desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5.",
+        "desc_cn": "处于异常状态时，物防×1.5。"
     },
     "Gulp Missile": {
         "name_cn": "一口导弹",
-        "desc": "If this Pokemon is a Cramorant, it changes forme when it hits a target with Surf or uses the first turn of Dive successfully. It becomes Gulping Form with an Arrokuda in its mouth if it has more than 1/2 of its maximum HP remaining, or Gorging Form with a Pikachu in its mouth if it has 1/2 or less of its maximum HP remaining. If Cramorant gets hit in Gulping or Gorging Form, it spits the Arrokuda or Pikachu at its attacker, even if it has no HP remaining. The projectile deals damage equal to 1/4 of the target's maximum HP, rounded down; this damage is blocked by the Magic Guard Ability but not by a substitute. An Arrokuda also lowers the target's Defense by 1 stage, and a Pikachu paralyzes the target. Cramorant will return to normal if it spits out a projectile, switches out, or Dynamaxes."
+        "desc": "If this Pokemon is a Cramorant, it changes forme when it hits a target with Surf or uses the first turn of Dive successfully. It becomes Gulping Form with an Arrokuda in its mouth if it has more than 1/2 of its maximum HP remaining, or Gorging Form with a Pikachu in its mouth if it has 1/2 or less of its maximum HP remaining. If Cramorant gets hit in Gulping or Gorging Form, it spits the Arrokuda or Pikachu at its attacker, even if it has no HP remaining. The projectile deals damage equal to 1/4 of the target's maximum HP, rounded down; this damage is blocked by the Magic Guard Ability but not by a substitute. An Arrokuda also lowers the target's Defense by 1 stage, and a Pikachu paralyzes the target. Cramorant will return to normal if it spits out a projectile, switches out, or Dynamaxes.",
+        "desc_cn": "古月鸟使用冲浪或潜水时，HP高于1/2嘴叼尖梭鲈，低于1/2嘴叼皮卡丘。受到攻击时吐出并造成伤害。"
     },
     "Teravolt": {
         "name_cn": "兆级电压",
-        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon."
+        "desc": "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
+        "desc_cn": "自身招式无视对手的防御类特性（如飘浮、结实、魔法防守等）。"
     },
     "Libero": {
         "name_cn": "自由者",
-        "desc": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized."
+        "desc": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
+        "desc_cn": "使用招式前变为该招式属性。每回合一次，太晶化时无效。"
     },
     "Beast Boost": {
         "name_cn": "异兽提升",
-        "desc": "This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order."
+        "desc": "This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+        "desc_cn": "击倒对手后，自身最高能力提升1级。"
     },
     "Leaf Guard": {
         "name_cn": "叶子防守",
-        "desc": "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella."
+        "desc": "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+        "desc_cn": "大晴天时，免疫异常状态和哈欠。无法使用睡觉。"
     },
     "Soundproof": {
         "name_cn": "隔音",
-        "desc": "This Pokemon is immune to sound-based moves, unless it used the move."
+        "desc": "This Pokemon is immune to sound-based moves, unless it used the move.",
+        "desc_cn": "免疫声音类招式（自身使用的除外）。"
     },
     "Compound Eyes": {
         "name_cn": "复眼",
-        "desc": "This Pokemon's moves have their accuracy multiplied by 1.3."
+        "desc": "This Pokemon's moves have their accuracy multiplied by 1.3.",
+        "desc_cn": "自身招式命中率×1.3。"
     },
     "Drizzle": {
         "name_cn": "降雨",
-        "desc": "On switch-in, this Pokemon summons Rain Dance."
+        "desc": "On switch-in, this Pokemon summons Rain Dance.",
+        "desc_cn": "上场时，天气变为雨天。"
     },
     "Full Metal Body": {
         "name_cn": "金属防护",
-        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages."
+        "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+        "desc_cn": "对手无法降低自身的能力等级。"
     },
     "Soul-Heart": {
         "name_cn": "魂心",
-        "desc": "This Pokemon's Special Attack is raised by 1 stage when another Pokemon faints."
+        "desc": "This Pokemon's Special Attack is raised by 1 stage when another Pokemon faints.",
+        "desc_cn": "其他宝可梦濒死时，自身特攻提升1级。"
     },
     "Refrigerate": {
         "name_cn": "冰冻皮肤",
-        "desc": "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身一般属性招式变为冰属性，威力×1.2。"
     },
     "Hadron Engine": {
         "name_cn": "强子引擎",
-        "desc": "On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x."
+        "desc": "On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x.",
+        "desc_cn": "上场时展开电气场地。电气场地中特攻×1.333。"
     },
     "As One (Glastrier)": {
         "name_cn": "人马一体(雪暴马)",
-        "desc": "Combination of the Unnerve and Chilling Neigh Abilities."
+        "desc": "Combination of the Unnerve and Chilling Neigh Abilities.",
+        "desc_cn": "紧张感与苍白嘶鸣的组合特性。"
     },
     "As One (Spectrier)": {
         "name_cn": "人马一体(灵幽马)",
-        "desc": "Combination of the Unnerve and Grim Neigh Abilities."
+        "desc": "Combination of the Unnerve and Grim Neigh Abilities.",
+        "desc_cn": "紧张感与漆黑嘶鸣的组合特性。"
     },
     "Beads of Ruin": {
         "name_cn": "灾祸之珠",
-        "desc": "Active Pokemon without this Ability have their Special Defense multiplied by 0.75."
+        "desc": "Active Pokemon without this Ability have their Special Defense multiplied by 0.75.",
+        "desc_cn": "场上其他宝可梦的特防×0.75。"
     },
     "Cotton Down": {
         "name_cn": "棉絮飘落",
-        "desc": "When this Pokemon is hit by an attack, the Speed of all other Pokemon on the field is lowered by 1 stage."
+        "desc": "When this Pokemon is hit by an attack, the Speed of all other Pokemon on the field is lowered by 1 stage.",
+        "desc_cn": "受到攻击时，场上所有其他宝可梦速度降低1级。"
     },
     "Dragonize": {
         "name_cn": "龙化",
-        "desc": "This Pokemon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects."
+        "desc": "This Pokemon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "desc_cn": "自身一般属性招式变为龙属性，威力×1.2。"
     },
     "Eelevate": {
         "name_cn": "升华",
-        "desc": "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order."
+        "desc": "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+        "desc_cn": "免疫地面属性攻击和撒菱、毒菱、黏黏网及沙穴效果。击倒对手后最高能力提升1级。"
     },
     "Embody Aspect (Cornerstone)": {
         "name_cn": "面具之魂(基石)",
-        "desc": "On switch-in, this Pokemon's Defense is raised by 1 stage."
+        "desc": "On switch-in, this Pokemon's Defense is raised by 1 stage.",
+        "desc_cn": "上场时，物防提升1级。"
     },
     "Embody Aspect (Hearthflame)": {
         "name_cn": "面具之魂(炉心)",
-        "desc": "On switch-in, this Pokemon's Attack is raised by 1 stage."
+        "desc": "On switch-in, this Pokemon's Attack is raised by 1 stage.",
+        "desc_cn": "上场时，物攻提升1级。"
     },
     "Embody Aspect (Teal)": {
         "name_cn": "面具之魂(青绿)",
-        "desc": "On switch-in, this Pokemon's Speed is raised by 1 stage."
+        "desc": "On switch-in, this Pokemon's Speed is raised by 1 stage.",
+        "desc_cn": "上场时，速度提升1级。"
     },
     "Embody Aspect (Wellspring)": {
         "name_cn": "面具之魂(泉源)",
-        "desc": "On switch-in, this Pokemon's Special Defense is raised by 1 stage."
+        "desc": "On switch-in, this Pokemon's Special Defense is raised by 1 stage.",
+        "desc_cn": "上场时，特防提升1级。"
     },
     "Emergency Exit": {
         "name_cn": "紧急逃脱",
-        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage."
+        "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
+        "desc_cn": "HP高于1/2时受到伤害降至1/2以下，立即替换下场。"
     },
     "Fire Mane": {
         "name_cn": "火焰鬃毛",
-        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
+        "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+        "desc_cn": "使用火属性招式时，威力×1.5。"
     },
     "Hospitality": {
         "name_cn": "好客",
-        "desc": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down."
+        "desc": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down.",
+        "desc_cn": "上场时，恢复同伴1/4最大HP。"
     },
     "Immunity": {
         "name_cn": "免疫",
-        "desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it."
+        "desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.",
+        "desc_cn": "免疫中毒状态。获得该特性时可治愈中毒。"
     },
     "Magic Bounce": {
         "name_cn": "魔法反射",
-        "desc": "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, Sticky Web, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect."
+        "desc": "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, Sticky Web, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
+        "desc_cn": "将对手指向自身的变化招式反弹回使用者。隐形岩、撒菱等每方仅可反弹一次。"
     },
     "Mega Sol": {
         "name_cn": "太阳之力",
-        "desc": "This Pokemon's moves are used as if the effects of Sunny Day were active."
+        "desc": "This Pokemon's moves are used as if the effects of Sunny Day were active.",
+        "desc_cn": "自身的招式在大晴天效果下使用（无视实际天气）。"
     },
     "Mind's Eye": {
         "name_cn": "心眼",
-        "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage."
+        "desc": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+        "desc_cn": "一般和格斗属性招式可以命中幽灵属性宝可梦。对手无法降低自身命中等级。无视回避等级。"
     },
     "Mountaineer": {
         "name_cn": "攀岩",
-        "desc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock."
+        "desc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
+        "desc_cn": "上场时，免疫岩石属性攻击和隐形岩。"
     },
     "Parental Bond": {
         "name_cn": "亲子羁绊",
-        "desc": "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect Doom Desire, Dragon Darts, Dynamax Cannon, Endeavor, Explosion, Final Gambit, Fling, Future Sight, Ice Ball, Rollout, Self-Destruct, any multi-hit move, any move that has multiple targets, or any two-turn move."
+        "desc": "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect Doom Desire, Dragon Darts, Dynamax Cannon, Endeavor, Explosion, Final Gambit, Fling, Future Sight, Ice Ball, Rollout, Self-Destruct, any multi-hit move, any move that has multiple targets, or any two-turn move.",
+        "desc_cn": "攻击招式变为二连击，第二次伤害为1/4。"
     },
     "Persistent": {
         "name_cn": "持久",
-        "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon."
+        "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.",
+        "desc_cn": "自身开启的重力、魔法空间、顺风、戏法空间等效果持续时间延长2回合。"
     },
     "Piercing Drill": {
         "name_cn": "穿刺钻头",
-        "desc": "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage."
+        "desc": "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
+        "desc_cn": "自身接触类招式无视守住类效果，伤害变为1/4。"
     },
     "Poison Puppeteer": {
         "name_cn": "毒偶师",
-        "desc": "If this Pokemon is a Pecharunt and poisons or badly poisons a target, the target also becomes confused."
+        "desc": "If this Pokemon is a Pecharunt and poisons or badly poisons a target, the target also becomes confused.",
+        "desc_cn": "枣糕使对手中毒或剧毒时，对手同时陷入混乱。"
     },
     "Protean": {
         "name_cn": "变幻自如",
-        "desc": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized."
+        "desc": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
+        "desc_cn": "使用招式前变为该招式属性。每回合一次，太晶化时无效。"
     },
     "Punk Rock": {
         "name_cn": "朋克摇滚",
-        "desc": "This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves."
+        "desc": "This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves.",
+        "desc_cn": "自身声音类招式威力×1.3。受到声音类招式伤害减半。"
     },
     "Queenly Majesty": {
         "name_cn": "女王的威严",
-        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect."
+        "desc": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
+        "desc_cn": "对手使用优先度招式攻击自身或同伴时无效。"
     },
     "Rebound": {
         "name_cn": "反弹",
-        "desc": "On switch-in, this Pokemon blocks certain status moves and instead uses the move against the original user."
+        "desc": "On switch-in, this Pokemon blocks certain status moves and instead uses the move against the original user.",
+        "desc_cn": "上场时，反弹对手指向自身的变化招式。"
     },
     "Snow Warning": {
         "name_cn": "降雪",
-        "desc": "On switch-in, this Pokemon summons Snow."
+        "desc": "On switch-in, this Pokemon summons Snow.",
+        "desc_cn": "上场时，天气变为冰雹。"
     },
     "Spicy Spray": {
         "name_cn": "辛辣喷雾",
-        "desc": "If this Pokemon is hit by an attack, the attacker becomes burned."
+        "desc": "If this Pokemon is hit by an attack, the attacker becomes burned.",
+        "desc_cn": "受到攻击时，使攻击方灼伤。"
     },
     "Suction Cups": {
         "name_cn": "吸盘",
-        "desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item."
+        "desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+        "desc_cn": "无法被逼换下场。"
     },
     "Supersweet Syrup": {
         "name_cn": "超甜花蜜",
-        "desc": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle."
+        "desc": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle.",
+        "desc_cn": "上场时，降低对手回避等级1级。每场战斗仅一次。"
     },
     "Tablets of Ruin": {
         "name_cn": "灾祸之板",
-        "desc": "Active Pokemon without this Ability have their Attack multiplied by 0.75."
+        "desc": "Active Pokemon without this Ability have their Attack multiplied by 0.75.",
+        "desc_cn": "场上其他宝可梦的物攻×0.75。"
     },
     "Wood Hammer": {
         "name_cn": "木槌",
-        "desc": ""
+        "desc": "",
+        "desc_cn": "木槌招式的反作用力伤害减少1/3。"
     },
     "Toxic Chain": {
         "name_cn": "剧毒锁链",
-        "desc": "This Pokemon's attacks have a 30% chance of badly poisoning. This effect comes before a move's inherent secondary effect chance."
+        "desc": "This Pokemon's attacks have a 30% chance of badly poisoning. This effect comes before a move's inherent secondary effect chance.",
+        "desc_cn": "自身攻击有30%概率使对手剧毒。"
     },
     "Tera Shift": {
         "name_cn": "太晶变换",
-        "desc": "If this Pokemon is a Terapagos, it transforms into its Terastal Form on entry."
+        "desc": "If this Pokemon is a Terapagos, it transforms into its Terastal Form on entry.",
+        "desc_cn": "太晶霸主上场时变为太晶形态。"
     },
     "Teraform Zero": {
         "name_cn": "零形态太晶",
-        "desc": "Terapagos: Terastallizing ends the effects of weather and terrain. Once per battle."
+        "desc": "Terapagos: Terastallizing ends the effects of weather and terrain. Once per battle.",
+        "desc_cn": "太晶霸主太晶化后，天气和场地效果全部消失。每场战斗仅一次。"
     },
     "Tera Shell": {
         "name_cn": "太晶贝壳",
-        "desc": "If this Pokemon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokemon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack."
+        "desc": "If this Pokemon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokemon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.",
+        "desc_cn": "太晶霸主HP全满时，对手攻击效果全部变为抵抗（免疫除外）。"
     },
     "Water Absorb": {
         "name_cn": "储水",
-        "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move."
+        "desc": "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move.",
+        "desc_cn": "免疫水属性招式，受到水属性攻击时恢复1/4最大HP。"
     },
     "No Ability": {
         "name_cn": "No Ability",
-        "desc": "Does nothing."
+        "desc": "Does nothing.",
+        "desc_cn": "无效果。"
     },
     "As One": {
         "name_cn": "As One",
-        "desc": "See 'As One (Glastrier)' and 'As One (Spectrier)'."
+        "desc": "See 'As One (Glastrier)' and 'As One (Spectrier)'.",
+        "desc_cn": "见雪暴马和灵幽马的组合特性说明。"
     }
 }
