@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>宝可梦对战速查</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --surface: #ffffff;
+            --surface-hover: #f5f5f5;
+            --border: #e5e5e5;
+            --border-light: #f0f0f0;
+            --text: #171717;
+            --text-secondary: #737373;
+            --text-tertiary: #a3a3a3;
+            --accent: #dc2626;
+            --accent-light: #fef2f2;
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-xs: 6px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            white-space: nowrap;
+        }
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: var(--radius-xs);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .search-wrapper {
+            flex: 1;
+            max-width: 480px;
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--bg);
+            font-size: 14px;
+            color: var(--text);
+            outline: none;
+            transition: border-color var(--transition), box-shadow var(--transition);
+        }
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-light);
+            background: var(--surface);
+        }
+        .search-input::placeholder { color: var(--text-tertiary); }
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-tertiary);
+            pointer-events: none;
+        }
+
+        /* Tabs */
+        .tabs {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+        }
+        .tabs-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0;
+        }
+        .tab {
+            padding: 12px 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all var(--transition);
+            user-select: none;
+            position: relative;
+        }
+        .tab:hover { color: var(--text); background: var(--bg); }
+        .tab.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Main */
+        .main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        /* Search Results Dropdown */
+        .search-results {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+            max-height: 360px;
+            overflow-y: auto;
+            z-index: 20;
+            display: none;
+            overscroll-behavior: contain;
+        }
+        .search-results.show { display: block; }
+        .result-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: background var(--transition);
+        }
+        .result-item:hover { background: var(--bg); }
+        .result-item + .result-item { border-top: 1px solid var(--border-light); }
+        .result-name { font-weight: 500; font-size: 14px; }
+        .result-meta { font-size: 12px; color: var(--text-secondary); display: flex; gap: 6px; align-items: center; }
+        .result-group-label {
+            padding: 10px 16px 6px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            letter-spacing: 0.04em;
+            position: sticky;
+            top: 0;
+            background: var(--surface);
+            z-index: 1;
+        }
+        .result-group-label:not(:first-child) { border-top: 1px solid var(--border); }
+        .result-move-power { font-size: 12px; color: var(--text-tertiary); }
+
+        /* Pokemon Card */
+        .pokemon-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .sprite-box {
+            width: 96px;
+            height: 96px;
+            background: var(--bg);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .sprite-box img { image-rendering: pixelated; }
+        .card-title { flex: 1; }
+        .card-num { font-size: 12px; color: var(--text-tertiary); font-weight: 500; }
+        .card-name { font-size: 22px; font-weight: 700; line-height: 1.2; }
+        .card-name-en { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+        .types { display: flex; gap: 6px; margin-top: 8px; }
+        .type-badge {
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Sections */
+        .section { padding: 20px 24px; }
+        .section + .section { border-top: 1px solid var(--border-light); }
+        .section-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        /* Stats */
+        .stats-grid { display: flex; flex-direction: column; gap: 8px; }
+        .stat-row { display: flex; align-items: center; gap: 12px; }
+        .stat-label { width: 40px; font-size: 12px; font-weight: 500; color: var(--text-secondary); }
+        .stat-track {
+            flex: 1;
+            height: 8px;
+            background: var(--bg);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .stat-fill { height: 100%; border-radius: 999px; transition: width 400ms ease-out; }
+        .stat-value { width: 32px; font-size: 13px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+        .stat-total { text-align: right; font-size: 12px; color: var(--text-tertiary); margin-top: 8px; }
+
+        /* Abilities */
+        .ability-list { display: flex; flex-wrap: wrap; gap: 6px; }
+        .ability-tag {
+            padding: 5px 12px;
+            background: var(--bg);
+            border-radius: var(--radius-xs);
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .ability-tag.hidden { border: 1px dashed var(--border); color: var(--text-secondary); }
+
+        /* Type Matchup */
+        .matchup-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+        .matchup-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: var(--radius-xs);
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .matchup-pill.weak { background: #fef2f2; color: #dc2626; }
+        .matchup-pill.resist { background: #f0fdf4; color: #16a34a; }
+        .matchup-pill.immune { background: #f5f5f5; color: #737373; }
+
+        /* Sets */
+        .sets-list { display: flex; flex-direction: column; gap: 12px; }
+        .set-card {
+            background: var(--bg);
+            border-radius: var(--radius);
+            padding: 16px;
+        }
+        .set-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+        .set-name { font-weight: 700; font-size: 15px; }
+        .set-format { font-size: 12px; color: var(--text-tertiary); }
+        .set-grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 13px; }
+        .set-key { color: var(--text-secondary); font-weight: 500; }
+        .set-val { color: var(--text); }
+        .move-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xs);
+            font-size: 12px;
+            margin: 2px;
+        }
+
+        /* Move List */
+        .move-search {
+            width: 100%;
+            padding: 10px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface);
+            font-size: 14px;
+            outline: none;
+            margin-bottom: 16px;
+            transition: border-color var(--transition), box-shadow var(--transition);
+        }
+        .move-search:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+        .move-table { width: 100%; border-collapse: collapse; }
+        .move-table th {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        .move-table td {
+            padding: 10px 12px;
+            font-size: 13px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .move-table tr:hover td { background: var(--surface-hover); }
+        .move-name-cell { font-weight: 500; }
+
+        /* Ability List */
+        .ability-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            margin-bottom: 8px;
+            transition: border-color var(--transition);
+        }
+        .ability-card:hover { border-color: var(--accent); }
+        .ability-card-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+        .ability-card-name { font-weight: 600; font-size: 14px; }
+        .ability-card-name-en { font-size: 12px; color: var(--text-secondary); }
+        .ability-card-pokes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+        .ability-poke-tag {
+            display: inline-flex; align-items: center; gap: 4px;
+            padding: 3px 8px; background: var(--bg); border-radius: var(--radius-xs);
+            font-size: 11px; color: var(--text-secondary); cursor: pointer;
+            transition: all var(--transition);
+        }
+        .ability-poke-tag:hover { color: var(--accent); background: var(--accent-light); }
+        .ability-poke-tag img { width: 20px; height: 20px; image-rendering: pixelated; }
+        .ability-count { font-size: 11px; color: var(--text-tertiary); }
+
+        /* Type Chart */
+        .chart-wrap { overflow-x: auto; margin: 0 -24px; padding: 0 24px; }
+        .type-table { border-collapse: collapse; font-size: 11px; width: 100%; min-width: 640px; }
+        .type-table th, .type-table td {
+            padding: 6px;
+            text-align: center;
+            border: 1px solid var(--border-light);
+        }
+        .type-table th { font-weight: 600; font-size: 10px; }
+        .type-table .cell-2 { background: #dcfce7; color: #166534; font-weight: 600; }
+        .type-table .cell-05 { background: #fee2e2; color: #991b1b; }
+        .type-table .cell-0 { background: #f5f5f5; color: #a3a3a3; }
+        .type-table .row-h {
+            background: var(--bg);
+            font-weight: 600;
+            text-align: left;
+            padding-left: 10px;
+            white-space: nowrap;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-tertiary);
+        }
+        .empty-state-icon { font-size: 48px; margin-bottom: 12px; opacity: 0.5; }
+        .empty-state-text { font-size: 14px; }
+
+        /* Skeleton Loader */
+        .skeleton {
+            background: linear-gradient(90deg, var(--border-light) 25%, var(--surface-hover) 50%, var(--border-light) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: var(--radius-xs);
+        }
+        @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+        .skeleton-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+        .skeleton-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 12px 8px;
+            text-align: center;
+        }
+        .skeleton-card .skeleton-sprite { width: 80px; height: 80px; margin: 0 auto 8px; border-radius: var(--radius-xs); }
+        .skeleton-card .skeleton-text { height: 12px; margin: 4px auto; border-radius: 4px; }
+        .skeleton-card .skeleton-text.w60 { width: 60%; }
+        .skeleton-card .skeleton-text.w40 { width: 40%; height: 10px; }
+        .skeleton-table-row { display: flex; gap: 12px; padding: 10px 12px; border-bottom: 1px solid var(--border-light); }
+        .skeleton-table-row .skeleton { height: 14px; }
+        .skeleton-table-row .skeleton.w30 { width: 30%; }
+        .skeleton-table-row .skeleton.w15 { width: 15%; }
+        .skeleton-table-row .skeleton.w10 { width: 10%; }
+
+        /* Pokemon Grid */
+        .poke-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+        .poke-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 12px 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+        }
+        .poke-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        .poke-card:active { transform: translateY(0); }
+        .poke-card-sprite { width: 80px; height: 80px; image-rendering: pixelated; margin-bottom: 6px; }
+        .poke-card-num { font-size: 10px; color: var(--text-tertiary); font-weight: 500; }
+        .poke-card-name { font-size: 13px; font-weight: 600; line-height: 1.3; margin: 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .poke-card-types { display: flex; gap: 3px; justify-content: center; }
+        .poke-card-type { padding: 1px 6px; border-radius: 999px; font-size: 9px; font-weight: 600; color: #fff; }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 14px; margin-bottom: 16px;
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); font-size: 13px; font-weight: 500;
+            color: var(--text-secondary); cursor: pointer;
+            transition: all var(--transition);
+        }
+        .back-btn:hover { color: var(--text); border-color: var(--text-secondary); transform: translateX(-2px); }
+        .back-btn:active { transform: translateX(0); }
+
+        /* Detail View Transition */
+        #pokemonDetail { animation: fadeInUp 200ms ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Unified Navigation Bar */
+        .poke-nav {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .poke-nav-item {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 10px 16px;
+            font-size: 13px; font-weight: 500;
+            color: var(--text-secondary); cursor: pointer;
+            transition: all var(--transition);
+            border: none; background: none;
+            white-space: nowrap;
+        }
+        .poke-nav-item:hover { color: var(--text); background: var(--bg); }
+        .poke-nav-item:active { background: var(--border-light); }
+        .poke-nav-item:disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+        .poke-nav-item .nav-name {
+            max-width: 100px; overflow: hidden; text-overflow: ellipsis;
+        }
+        .poke-nav-sep { width: 1px; height: 24px; background: var(--border); flex-shrink: 0; }
+        .poke-nav-center {
+            flex: 1; text-align: center;
+            font-size: 12px; color: var(--text-tertiary);
+            font-variant-numeric: tabular-nums;
+            padding: 0 8px;
+            white-space: nowrap;
+        }
+
+        /* Move search no-results */
+        .no-results-row td { text-align: center; padding: 40px 20px; color: var(--text-tertiary); font-size: 14px; }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header-inner { gap: 12px; }
+            .logo span { display: none; }
+            .card-header { flex-direction: column; text-align: center; padding: 20px; }
+            .types { justify-content: center; }
+            .section { padding: 16px; }
+            .main { padding: 16px; }
+            .poke-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+            .poke-card { padding: 10px 6px; }
+            .poke-card-sprite { width: 64px; height: 64px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon">⚔️</div>
+                <span>对战速查</span>
+            </div>
+            <div class="search-wrapper">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索宝可梦 / 招式（中英文）" autocomplete="off">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs">
+        <div class="tabs-inner">
+            <div class="tab active" data-tab="pokemon">宝可梦</div>
+            <div class="tab" data-tab="typechart">属性表</div>
+            <div class="tab" data-tab="moves">招式</div>
+            <div class="tab" data-tab="abilities">特性</div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div id="panel-pokemon" class="panel active">
+            <div id="pokemonList">
+                <div class="skeleton-grid" id="pokeSkeleton"></div>
+            </div>
+            <div id="pokemonDetail" style="display:none;"></div>
+        </div>
+        <div id="panel-typechart" class="panel">
+            <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">属性克制表</h2>
+            <div class="chart-wrap" id="typeChartContainer"></div>
+        </div>
+        <div id="panel-moves" class="panel">
+            <input type="text" class="move-search" id="moveSearchInput" placeholder="搜索招式（中英文）" oninput="searchMoves()">
+            <table class="move-table">
+                <thead><tr><th>招式</th><th>属性</th><th>分类</th><th>威力</th><th>命中</th></tr></thead>
+                <tbody id="moveList"></tbody>
+            </table>
+        </div>
+        <div id="panel-abilities" class="panel">
+            <input type="text" class="move-search" id="abilitySearchInput" placeholder="搜索特性（中英文）" oninput="searchAbilities()">
+            <div id="abilityList"></div>
+        </div>
+    </main>
+
+    <script>
+        const TYPE_COLORS = {
+            'Normal':'#A8A878','Fire':'#F08030','Water':'#6890F0','Electric':'#F8D030',
+            'Grass':'#78C850','Ice':'#98D8D8','Fighting':'#C03028','Poison':'#A040A0',
+            'Ground':'#E0C068','Flying':'#A890F0','Psychic':'#F85888','Bug':'#A8B820',
+            'Rock':'#B8A038','Ghost':'#705898','Dragon':'#7038F8','Dark':'#705848',
+            'Steel':'#B8B8D0','Fairy':'#EE99AC'
+        };
+        const TYPE_CN = {
+            'Normal':'一般','Fire':'火','Water':'水','Electric':'电','Grass':'草',
+            'Ice':'冰','Fighting':'格斗','Poison':'毒','Ground':'地面','Flying':'飞行',
+            'Psychic':'超能','Bug':'虫','Rock':'岩石','Ghost':'幽灵','Dragon':'龙',
+            'Dark':'恶','Steel':'钢','Fairy':'妖精','Stellar':'星晶'
+        };
+        const STAT_NAMES = {hp:'HP',atk:'攻',def:'防',spa:'特攻',spd:'特防',spe:'速'};
+        const STAT_COLORS = {hp:'#ef4444',atk:'#f97316',def:'#3b82f6',spa:'#a855f7',spd:'#22c55e',spe:'#eab308'};
+        const MOVE_CATEGORY_CN = {'Physical':'物理','Special':'特殊','Status':'变化'};
+
+        // 分页状态
+        let pokeList=[],pokePage=0,movesList=[],movesPage=0;
+        const POKE_PAGE_SIZE=60,MOVES_PAGE_SIZE=80;
+
+        // 渲染骨架屏
+        function showPokeSkeleton() {
+            const skel = document.getElementById('pokeSkeleton');
+            if (!skel) return;
+            let html = '';
+            for (let i = 0; i < 24; i++) {
+                html += '<div class="skeleton-card"><div class="skeleton skeleton-sprite"></div><div class="skeleton skeleton-text w60"></div><div class="skeleton skeleton-text w40"></div></div>';
+            }
+            skel.innerHTML = html;
+        }
+        function showMovesSkeleton() {
+            const tbody = document.getElementById('moveList');
+            let html = '';
+            for (let i = 0; i < 12; i++) {
+                html += '<tr><td colspan="5"><div class="skeleton-table-row"><div class="skeleton w30"></div><div class="skeleton w15"></div><div class="skeleton w10"></div><div class="skeleton w10"></div><div class="skeleton w10"></div></div></td></tr>';
+            }
+            tbody.innerHTML = html;
+        }
+
+        let pokedex={},pokedexCn={},moves={},movesCn={},typeChart={},pokemonSets={},itemsCn={},abilitiesCn={},naturesCn={},formatsCn={},setNamesCn={};
+
+        async function loadData() {
+            showPokeSkeleton();
+            showMovesSkeleton();
+            const [p,pc,m,mc,tc,ps,ic,ac,nc,fc,snc] = await Promise.all([
+                fetch('data/pokedex.json').then(r=>r.json()),
+                fetch('data/pokemon_cn.json').then(r=>r.json()),
+                fetch('data/moves.json').then(r=>r.json()),
+                fetch('data/moves_cn.json').then(r=>r.json()),
+                fetch('data/typechart_clean.json').then(r=>r.json()),
+                fetch('data/pokemon_sets.json').then(r=>r.json()).catch(()=>({})),
+                fetch('data/items_cn.json').then(r=>r.json()).catch(()=>({})),
+                fetch('data/abilities_cn.json').then(r=>r.json()).catch(()=>({})),
+                fetch('data/natures_cn.json').then(r=>r.json()).catch(()=>({})),
+                fetch('data/formats_cn.json').then(r=>r.json()).catch(()=>({})),
+                fetch('data/set_names_cn.json').then(r=>r.json()).catch(()=>({}))
+            ]);
+            pokedex=p;pokedexCn=pc;moves=m;movesCn=mc;typeChart=tc;pokemonSets=ps;itemsCn=ic;abilitiesCn=ac;naturesCn=nc;formatsCn=fc;setNamesCn=snc;
+            renderTypeChart();
+            // 准备列表数据（过滤无效条目，按编号排序）
+            pokeList = Object.entries(pokedex)
+                .map(([id,d])=>({id,...d,cn:pc[d.name]||''}))
+                .filter(d=>d.num>=1 && d.num<=1025)
+                .sort((a,b)=>a.num-b.num);
+            movesList = Object.entries(moves).map(([id,d])=>({id,...d,cn:mc[d.name]||''}));
+            // 构建特性数据（从宝可梦数据反向提取）
+            buildAbilitiesList();
+            renderPokemonList();
+            renderMovesList();
+            renderAbilitiesList();
+        }
+
+        // 宝可梦列表
+        let pokeObserver = null;
+        let currentPokeData = null;
+
+        function renderPokemonList(list) {
+            const data = list || pokeList;
+            currentPokeData = data;
+            pokePage = 0;
+            // 清理旧 observer
+            if (pokeObserver) { pokeObserver.disconnect(); pokeObserver = null; }
+            const container = document.getElementById('pokemonList');
+            const page = data.slice(0, POKE_PAGE_SIZE);
+            const hasMore = data.length > POKE_PAGE_SIZE;
+            container.innerHTML = `<div class="poke-grid" id="pokeGrid">${page.map(p=>pokeCardHtml(p)).join('')}</div>` +
+                (hasMore ? '<div id="pokeSentinel" style="height:1px;"></div>' : '');
+            if (hasMore) setupPokeObserver(data);
+        }
+
+        function setupPokeObserver(data) {
+            const sentinel = document.getElementById('pokeSentinel');
+            if (!sentinel) return;
+            pokeObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    pokePage++;
+                    const start = pokePage * POKE_PAGE_SIZE;
+                    const page = data.slice(start, start + POKE_PAGE_SIZE);
+                    if (!page.length) { pokeObserver.disconnect(); return; }
+                    const grid = document.getElementById('pokeGrid');
+                    grid.insertAdjacentHTML('beforeend', page.map(p=>pokeCardHtml(p)).join(''));
+                    if (start + POKE_PAGE_SIZE >= data.length) pokeObserver.disconnect();
+                }
+            }, { rootMargin: '200px' });
+            pokeObserver.observe(sentinel);
+        }
+        function pokeCardHtml(p) {
+            const types = (p.types||[]).map(t=>`<span class="poke-card-type" style="background:${TYPE_COLORS[t]||'#888'}">${TYPE_CN[t]||t}</span>`).join('');
+            return `<div class="poke-card" onclick="selectPokemon('${p.id}')">
+                <img class="poke-card-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.num}.png" onerror="this.style.display='none'" loading="lazy">
+                <div class="poke-card-num">#${p.num}</div>
+                <div class="poke-card-name" title="${p.cn||p.name}">${p.cn||p.name}</div>
+                <div class="poke-card-types">${types}</div>
+            </div>`;
+        }
+
+        // 招式列表
+        let movesObserver = null;
+        let currentMovesData = null;
+
+        function renderMovesList(list) {
+            currentMovesData = list || null;
+            movesPage = 0;
+            if (movesObserver) { movesObserver.disconnect(); movesObserver = null; }
+            const data = currentMovesData || movesList;
+            const page = data.slice(0, MOVES_PAGE_SIZE).sort((a,b)=>(b.power||0)-(a.power||0));
+            renderMoveRows(page, data.length > MOVES_PAGE_SIZE);
+        }
+
+        function setupMovesObserver(data) {
+            const sentinel = document.getElementById('movesSentinel');
+            if (!sentinel) return;
+            movesObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    movesPage++;
+                    const start = movesPage * MOVES_PAGE_SIZE;
+                    const page = data.slice(start, start + MOVES_PAGE_SIZE).sort((a,b)=>(b.power||0)-(a.power||0));
+                    if (!page.length) { movesObserver.disconnect(); return; }
+                    const tbody = document.getElementById('moveList');
+                    // 移除哨兵行
+                    const oldSentinel = document.getElementById('movesSentinel');
+                    if (oldSentinel) oldSentinel.remove();
+                    tbody.insertAdjacentHTML('beforeend', moveRowsHtml(page));
+                    if (start + MOVES_PAGE_SIZE < data.length) {
+                        tbody.insertAdjacentHTML('beforeend', '<tr id="movesSentinel"><td colspan="5" style="height:1px;padding:0;"></td></tr>');
+                        movesObserver.observe(document.getElementById('movesSentinel'));
+                    } else {
+                        movesObserver.disconnect();
+                    }
+                }
+            }, { rootMargin: '200px' });
+            movesObserver.observe(sentinel);
+        }
+        function moveRowsHtml(list) {
+            return list.map(m=>{
+                const cn=m.cn||'';
+                return `<tr>
+                    <td class="move-name-cell">${cn?cn+' ('+m.name+')':m.name}</td>
+                    <td><span class="type-badge" style="background:${TYPE_COLORS[m.type]||'#888'};font-size:11px;">${TYPE_CN[m.type]||m.type}</span></td>
+                    <td>${MOVE_CATEGORY_CN[m.category]||m.category||''}</td>
+                    <td>${m.power||'—'}</td>
+                    <td>${m.accuracy===-1?'必中':(m.accuracy||'—')}</td>
+                </tr>`;
+            }).join('');
+        }
+        function renderMoveRows(page, hasMore) {
+            const tbody = document.getElementById('moveList');
+            if (!page.length) {
+                tbody.innerHTML = '<tr class="no-results-row"><td colspan="5">没有找到匹配的招式</td></tr>';
+                return;
+            }
+            tbody.innerHTML = moveRowsHtml(page) +
+                (hasMore ? '<tr id="movesSentinel"><td colspan="5" style="height:1px;padding:0;"></td></tr>' : '');
+            if (hasMore) setupMovesObserver(currentMovesData || movesList);
+        }
+
+        // Search
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        searchInput.addEventListener('input', () => {
+            const q = searchInput.value.trim().toLowerCase();
+            if (!q) { searchResults.classList.remove('show'); return; }
+
+            // 搜宝可梦
+            const pokeResults = [];
+            for (const [id, data] of Object.entries(pokedex)) {
+                const cn = pokedexCn[data.name]||'';
+                if (data.name.toLowerCase().includes(q) || cn.includes(q) || id.includes(q)) {
+                    pokeResults.push({id,...data,cn});
+                }
+            }
+
+            // 搜招式
+            const moveResults = [];
+            for (const [id, data] of Object.entries(moves)) {
+                const cn = movesCn[data.name]||'';
+                if (data.name.toLowerCase().includes(q) || cn.includes(q)) {
+                    moveResults.push({id,...data,cn});
+                }
+            }
+
+            if (!pokeResults.length && !moveResults.length) { searchResults.classList.remove('show'); return; }
+
+            let html = '';
+            if (pokeResults.length) {
+                html += '<div class="result-group-label">宝可梦</div>';
+                html += pokeResults.slice(0,8).map(r => {
+                    const types = (r.types||[]).map(t=>`<span class="type-badge" style="background:${TYPE_COLORS[t]||'#888'};font-size:10px;padding:2px 6px;">${TYPE_CN[t]||t}</span>`).join('');
+                    return `<div class="result-item" onclick="selectPokemon('${r.id}')">
+                        <div class="result-name">${r.cn||r.name}</div>
+                        <div class="result-meta">#${r.num} ${types}</div>
+                    </div>`;
+                }).join('');
+            }
+            if (moveResults.length) {
+                html += '<div class="result-group-label">招式</div>';
+                html += moveResults.slice(0,6).map(m => {
+                    const typeBadge = `<span class="type-badge" style="background:${TYPE_COLORS[m.type]||'#888'};font-size:10px;padding:2px 6px;">${TYPE_CN[m.type]||m.type}</span>`;
+                    const power = m.power ? `威力 ${m.power}` : '';
+                    return `<div class="result-item" onclick="selectMove('${m.id}')">
+                        <div class="result-name">${m.cn||m.name}</div>
+                        <div class="result-meta">${typeBadge} <span class="result-move-power">${power}</span></div>
+                    </div>`;
+                }).join('');
+            }
+            searchResults.innerHTML = html;
+            searchResults.classList.add('show');
+        });
+        searchInput.addEventListener('keydown', e => {
+            if (e.key==='Enter') {
+                const q = searchInput.value.trim().toLowerCase();
+                // 精确匹配宝可梦
+                for (const [id,d] of Object.entries(pokedex)) {
+                    const cn = pokedexCn[d.name]||'';
+                    if (d.name.toLowerCase()===q || cn===q) { selectPokemon(id); return; }
+                }
+                // 精确匹配招式
+                for (const [id,m] of Object.entries(moves)) {
+                    const cn = movesCn[m.name]||'';
+                    if (m.name.toLowerCase()===q || cn===q) { selectMove(id); return; }
+                }
+            }
+        });
+        document.addEventListener('click', e => { if (!e.target.closest('.search-wrapper')) searchResults.classList.remove('show'); });
+
+        // 当前详情页的宝可梦在列表中的索引
+        let currentPokeIndex = -1;
+        let savedScrollY = 0;
+
+        function selectPokemon(id) {
+            searchResults.classList.remove('show');
+            searchInput.value = '';
+            switchTab('pokemon');
+            const d = pokedex[id];
+            if (d) {
+                // 保存滚动位置
+                savedScrollY = window.scrollY;
+                currentPokeIndex = pokeList.findIndex(p => p.id === id);
+                document.getElementById('pokemonList').style.display = 'none';
+                const detail = document.getElementById('pokemonDetail');
+                detail.style.display = 'block';
+                showPokemon({id,...d,cn:pokedexCn[d.name]||''});
+                window.scrollTo({ top: 0 });
+            }
+        }
+
+        function navPokemon(direction) {
+            const newIndex = currentPokeIndex + direction;
+            if (newIndex < 0 || newIndex >= pokeList.length) return;
+            const p = pokeList[newIndex];
+            currentPokeIndex = newIndex;
+            showPokemon(p);
+            window.scrollTo({ top: 0 });
+        }
+
+        function backToList() {
+            document.getElementById('pokemonDetail').style.display = 'none';
+            document.getElementById('pokemonDetail').innerHTML = '';
+            document.getElementById('pokemonList').style.display = 'block';
+            currentPokeIndex = -1;
+            // 恢复滚动位置
+            window.scrollTo({ top: savedScrollY });
+        }
+
+        // 键盘左右箭头导航
+        document.addEventListener('keydown', e => {
+            if (document.getElementById('pokemonDetail').style.display === 'block') {
+                if (e.key === 'ArrowLeft') { e.preventDefault(); navPokemon(-1); }
+                if (e.key === 'ArrowRight') { e.preventDefault(); navPokemon(1); }
+                if (e.key === 'Escape') { backToList(); }
+            }
+        });
+
+        function selectMove(id) {
+            searchResults.classList.remove('show');
+            searchInput.value = '';
+            switchTab('moves');
+            const m = moves[id];
+            if (m) {
+                document.getElementById('moveSearchInput').value = m.cn || m.name;
+                searchMovesDirect(m.name.toLowerCase());
+            }
+        }
+
+        function showPokemon(p) {
+            const types = (p.types||[]).map(t=>`<span class="type-badge" style="background:${TYPE_COLORS[t]||'#888'}">${TYPE_CN[t]||t}</span>`).join('');
+            const abilities = (p.abilities||[]).map(a=>{
+                const clean = a.replace(/\s*\(隐藏(特性)?\)/, '').trim();
+                const isHidden = a.includes('隐藏');
+                const cnName = abilitiesCn[clean] || clean;
+                return `<span class="ability-tag${isHidden?' hidden':''}">${cnName}${cnName!==clean?' ('+clean+')':''}</span>`;
+            }).join('');
+            const stats = p.baseStats||{};
+            const total = Object.values(stats).reduce((a,b)=>a+b,0);
+            const statRows = Object.entries(stats).map(([k,v])=>{
+                const pct = Math.min(100, v/1.8);
+                return `<div class="stat-row"><span class="stat-label">${STAT_NAMES[k]||k}</span><div class="stat-track"><div class="stat-fill" style="width:${pct}%;background:${STAT_COLORS[k]||'#888'}"></div></div><span class="stat-value">${v}</span></div>`;
+            }).join('');
+
+            // Type matchup
+            const effMap = {};
+            for (const [atk,matchups] of Object.entries(typeChart)) {
+                let m=1;
+                for (const def of (p.types||[])) { const t=matchups[def]; if(t!==undefined) m*=t; }
+                effMap[atk]=m;
+            }
+            const weak = Object.entries(effMap).filter(([,m])=>m>1).map(([t])=>t);
+            const resist = Object.entries(effMap).filter(([,m])=>m>0&&m<1).map(([t])=>t);
+            const immune = Object.entries(effMap).filter(([,m])=>m===0).map(([t])=>t);
+            const matchupHtml = [
+                ...weak.map(t=>`<span class="matchup-pill weak">${TYPE_CN[t]||t} 2×</span>`),
+                ...resist.map(t=>`<span class="matchup-pill resist">${TYPE_CN[t]||t} ½×</span>`),
+                ...immune.map(t=>`<span class="matchup-pill immune">${TYPE_CN[t]||t} 免疫</span>`)
+            ].join('');
+
+            // Sets
+            const sets = pokemonSets[p.name.toLowerCase()]||pokemonSets[p.id]||[];
+            const setsHtml = sets.length ? `<div class="sets-list">${sets.map(s=>{
+                const setMoves = (s.moveslots||[]).map(slot=>slot.map(m=>{
+                    const name=m.move||m;const cn=movesCn[name]||'';
+                    return `<span class="move-tag">${cn?cn+' ('+name+')':name}</span>`;
+                }).join(' ')).join('');
+                const evs=s.evconfigs?.[0]||{};
+                const evParts=[];
+                if(evs.hp)evParts.push(`HP:${evs.hp}`);if(evs.atk)evParts.push(`攻:${evs.atk}`);
+                if(evs.def)evParts.push(`防:${evs.def}`);if(evs.spa)evParts.push(`特攻:${evs.spa}`);
+                if(evs.spd)evParts.push(`特防:${evs.spd}`);if(evs.spe)evParts.push(`速:${evs.spe}`);
+                return `<div class="set-card">
+                    <div class="set-header"><span class="set-name">${setNamesCn[s.name]||s.name}</span><span class="set-format">${formatsCn[s.format]||s.format||''}</span></div>
+                    <div class="set-grid">
+                        <span class="set-key">道具</span><span class="set-val">${(s.items||[]).map(i=>{const cn=itemsCn[i]||'';return cn?cn+' ('+i+')':i;}).join(', ')}</span>
+                        <span class="set-key">特性</span><span class="set-val">${(s.abilities||[]).map(a=>{const cn=abilitiesCn[a]||'';return cn?cn+' ('+a+')':a;}).join(', ')}</span>
+                        <span class="set-key">性格</span><span class="set-val">${(s.natures||[]).map(n=>{const cn=naturesCn[n]||'';return cn?cn+' ('+n+')':n;}).join(', ')}</span>
+                        ${evParts.length?`<span class="set-key">努力值</span><span class="set-val">${evParts.join(' ')}</span>`:''}
+                        <span class="set-key">配招</span><span class="set-val">${setMoves}</span>
+                    </div>
+                </div>`;
+            }).join('')}</div>` : '';
+
+            // 导航栏
+            const hasPrev = currentPokeIndex > 0;
+            const hasNext = currentPokeIndex >= 0 && currentPokeIndex < pokeList.length - 1;
+            const prevPoke = hasPrev ? pokeList[currentPokeIndex - 1] : null;
+            const nextPoke = hasNext ? pokeList[currentPokeIndex + 1] : null;
+            const navHtml = currentPokeIndex >= 0 ? `<div class="poke-nav">
+                <button class="poke-nav-item" onclick="backToList()">← 返回</button>
+                <div class="poke-nav-sep"></div>
+                <button class="poke-nav-item" onclick="navPokemon(-1)" ${hasPrev?'':'disabled'}>
+                    <span>‹</span><span class="nav-name">${prevPoke?(prevPoke.cn||prevPoke.name):''}</span>
+                </button>
+                <div class="poke-nav-center">${currentPokeIndex + 1} / ${pokeList.length}</div>
+                <button class="poke-nav-item" onclick="navPokemon(1)" ${hasNext?'':'disabled'}>
+                    <span class="nav-name">${nextPoke?(nextPoke.cn||nextPoke.name):''}</span><span>›</span>
+                </button>
+            </div>` : `<button class="back-btn" onclick="backToList()">← 返回列表</button>`;
+
+            document.getElementById('pokemonDetail').innerHTML = `
+                ${navHtml}
+                <div class="pokemon-card">
+                    <div class="card-header">
+                        <div class="sprite-box"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.num}.png" width="96" height="96" onerror="this.style.display='none'"></div>
+                        <div class="card-title">
+                            <div class="card-num">#${p.num}</div>
+                            <div class="card-name">${p.cn||p.name}</div>
+                            <div class="card-name-en">${p.name}</div>
+                            <div class="types">${types}</div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">种族值</div>
+                        <div class="stats-grid">${statRows}</div>
+                        <div class="stat-total">合计 ${total}</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">特性</div>
+                        <div class="ability-list">${abilities}</div>
+                    </div>
+                    ${matchupHtml?`<div class="section"><div class="section-title">属性克制</div><div class="matchup-grid">${matchupHtml}</div></div>`:''}
+                    ${setsHtml?`<div class="section"><div class="section-title">竞技配招 (${sets.length})</div>${setsHtml}</div>`:''}
+                </div>`;
+        }
+
+        // Type Chart
+        function renderTypeChart() {
+            const order=['Normal','Fire','Water','Electric','Grass','Ice','Fighting','Poison','Ground','Flying','Psychic','Bug','Rock','Ghost','Dragon','Dark','Steel','Fairy'];
+            let html='<table class="type-table"><thead><tr><th></th>';
+            order.forEach(t=>{html+=`<th style="background:${TYPE_COLORS[t]};color:#fff;font-size:9px;">${TYPE_CN[t]||t}</th>`;});
+            html+='</tr></thead><tbody>';
+            order.forEach(d=>{
+                html+=`<tr><td class="row-h">${TYPE_CN[d]||d}</td>`;
+                order.forEach(a=>{
+                    const mult=(typeChart[a]||{})[d]??1;
+                    let cls='',txt='1';
+                    if(mult===2){cls='cell-2';txt='2';}
+                    else if(mult===0.5){cls='cell-05';txt='½';}
+                    else if(mult===0){cls='cell-0';txt='0';}
+                    html+=`<td class="${cls}">${txt}</td>`;
+                });
+                html+='</tr>';
+            });
+            html+='</tbody></table>';
+            document.getElementById('typeChartContainer').innerHTML=html;
+        }
+
+        // Moves
+        function searchMoves() {
+            const q=document.getElementById('moveSearchInput').value.trim().toLowerCase();
+            if (!q) { renderMovesList(); return; }
+            const filtered = movesList.filter(m=>m.name.toLowerCase().includes(q)||m.cn.includes(q));
+            renderMovesList(filtered);
+        }
+        function searchMovesDirect(q) {
+            document.getElementById('moveSearchInput').value = q;
+            const filtered = movesList.filter(m=>m.name.toLowerCase().includes(q)||m.cn.includes(q));
+            renderMovesList(filtered);
+        }
+
+        // 特性列表
+        let abilitiesList = [];
+        let abilitiesObserver = null;
+        const ABILITY_PAGE_SIZE = 40;
+
+        function buildAbilitiesList() {
+            const map = {};
+            for (const [id, d] of Object.entries(pokedex)) {
+                if (d.num < 1 || d.num > 1025) continue;
+                (d.abilities || []).forEach(a => {
+                    const clean = a.replace(/ \(隐藏特性?\)/, '').trim();
+                    const isHidden = a.includes('隐藏');
+                    if (!map[clean]) map[clean] = { name: clean, cn: abilitiesCn[clean] || '', pokes: [] };
+                    map[clean].pokes.push({ id, num: d.num, name: d.name, cn: pokedexCn[d.name] || '', hidden: isHidden });
+                });
+            }
+            abilitiesList = Object.values(map).sort((a, b) => (a.cn || a.name).localeCompare(b.cn || b.name));
+        }
+
+        function renderAbilitiesList(list) {
+            const data = list || abilitiesList;
+            if (abilitiesObserver) { abilitiesObserver.disconnect(); abilitiesObserver = null; }
+            const container = document.getElementById('abilityList');
+            const page = data.slice(0, ABILITY_PAGE_SIZE);
+            const hasMore = data.length > ABILITY_PAGE_SIZE;
+            container.innerHTML = page.map(a => abilityCardHtml(a)).join('') +
+                (hasMore ? '<div id="abilitySentinel" style="height:1px;"></div>' : '');
+            if (hasMore) setupAbilityObserver(data);
+        }
+
+        function setupAbilityObserver(data) {
+            const sentinel = document.getElementById('abilitySentinel');
+            if (!sentinel) return;
+            let page = 0;
+            abilitiesObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    page++;
+                    const start = page * ABILITY_PAGE_SIZE;
+                    const batch = data.slice(start, start + ABILITY_PAGE_SIZE);
+                    if (!batch.length) { abilitiesObserver.disconnect(); return; }
+                    const container = document.getElementById('abilityList');
+                    const oldSentinel = document.getElementById('abilitySentinel');
+                    if (oldSentinel) oldSentinel.remove();
+                    container.insertAdjacentHTML('beforeend', batch.map(a => abilityCardHtml(a)).join(''));
+                    if (start + ABILITY_PAGE_SIZE < data.length) {
+                        container.insertAdjacentHTML('beforeend', '<div id="abilitySentinel" style="height:1px;"></div>');
+                        abilitiesObserver.observe(document.getElementById('abilitySentinel'));
+                    } else {
+                        abilitiesObserver.disconnect();
+                    }
+                }
+            }, { rootMargin: '200px' });
+            abilitiesObserver.observe(sentinel);
+        }
+
+        function abilityCardHtml(a) {
+            const pokes = a.pokes.slice(0, 20).map(p => {
+                const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.num}.png`;
+                return `<span class="ability-poke-tag" onclick="selectPokemon('${p.id}')">
+                    <img src="${sprite}" onerror="this.style.display='none'" loading="lazy">${p.cn || p.name}${p.hidden ? '(隐)' : ''}
+                </span>`;
+            }).join('');
+            const more = a.pokes.length > 20 ? `<span class="ability-poke-tag">+${a.pokes.length - 20}</span>` : '';
+            return `<div class="ability-card">
+                <div class="ability-card-header">
+                    <span class="ability-card-name">${a.cn || a.name}</span>
+                    ${a.cn ? `<span class="ability-card-name-en">${a.name}</span>` : ''}
+                    <span class="ability-count">${a.pokes.length} 个宝可梦</span>
+                </div>
+                <div class="ability-card-pokes">${pokes}${more}</div>
+            </div>`;
+        }
+
+        function searchAbilities() {
+            const q = document.getElementById('abilitySearchInput').value.trim().toLowerCase();
+            if (!q) { renderAbilitiesList(); return; }
+            const filtered = abilitiesList.filter(a => a.name.toLowerCase().includes(q) || (a.cn && a.cn.includes(q)));
+            renderAbilitiesList(filtered);
+        }
+
+        // Tabs
+        function switchTab(name) {
+            document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+            const tab = document.querySelector(`.tab[data-tab="${name}"]`);
+            if (tab) tab.classList.add('active');
+            const panel = document.getElementById('panel-'+name);
+            if (panel) panel.classList.add('active');
+            // 切换到宝可梦 Tab 时回到列表视图
+            if (name === 'pokemon') backToList();
+        }
+        document.querySelectorAll('.tab').forEach(tab=>{
+            tab.addEventListener('click',()=> switchTab(tab.dataset.tab));
+        });
+
+        loadData();
+    </script>
+</body>
+</html>
