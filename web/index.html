@@ -351,6 +351,7 @@
         .ability-poke-tag:hover { color: var(--accent); background: var(--accent-light); }
         .ability-poke-tag img { width: 20px; height: 20px; image-rendering: pixelated; }
         .ability-count { font-size: 11px; color: var(--text-tertiary); }
+        .ability-card-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin: 8px 0; padding: 8px 10px; background: var(--bg); border-radius: var(--radius-xs); }
 
         /* Type Chart */
         .chart-wrap { overflow-x: auto; margin: 0 -24px; padding: 0 24px; }
@@ -1006,7 +1007,10 @@
                 (d.abilities || []).forEach(a => {
                     const clean = a.replace(/ \(隐藏特性?\)/, '').trim();
                     const isHidden = a.includes('隐藏');
-                    if (!map[clean]) map[clean] = { name: clean, cn: abilitiesCn[clean] || '', pokes: [] };
+                    const cnObj = abilitiesCn[clean];
+                    const cnName = (cnObj && cnObj.name_cn) ? cnObj.name_cn : (typeof cnObj === 'string' ? cnObj : '');
+                    const desc = (cnObj && cnObj.desc) ? cnObj.desc : '';
+                    if (!map[clean]) map[clean] = { name: clean, cn: cnName, desc, pokes: [] };
                     map[clean].pokes.push({ id, num: d.num, name: d.name, cn: pokedexCn[d.name] || '', hidden: isHidden });
                 });
             }
@@ -1057,12 +1061,14 @@
                 </span>`;
             }).join('');
             const more = a.pokes.length > 20 ? `<span class="ability-poke-tag">+${a.pokes.length - 20}</span>` : '';
+            const descHtml = a.desc ? `<div class="ability-card-desc">${a.desc}</div>` : '';
             return `<div class="ability-card">
                 <div class="ability-card-header">
                     <span class="ability-card-name">${a.cn || a.name}</span>
                     ${a.cn ? `<span class="ability-card-name-en">${a.name}</span>` : ''}
                     <span class="ability-count">${a.pokes.length} 个宝可梦</span>
                 </div>
+                ${descHtml}
                 <div class="ability-card-pokes">${pokes}${more}</div>
             </div>`;
         }
