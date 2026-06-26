@@ -867,7 +867,7 @@
             const abilities = (p.abilities||[]).map(a=>{
                 const clean = a.replace(/\s*\(隐藏(特性)?\)/, '').trim();
                 const isHidden = a.includes('隐藏');
-                const cnName = abilitiesCn[clean] || clean;
+                const cnName = getAbilityCn(clean) || clean;
                 return `<span class="ability-tag${isHidden?' hidden':''}">${cnName}${cnName!==clean?' ('+clean+')':''}</span>`;
             }).join('');
             const stats = p.baseStats||{};
@@ -909,7 +909,7 @@
                     <div class="set-header"><span class="set-name">${setNamesCn[s.name]||s.name}</span><span class="set-format">${formatsCn[s.format]||s.format||''}</span></div>
                     <div class="set-grid">
                         <span class="set-key">道具</span><span class="set-val">${(s.items||[]).map(i=>{const cn=itemsCn[i]||'';return cn?cn+' ('+i+')':i;}).join(', ')}</span>
-                        <span class="set-key">特性</span><span class="set-val">${(s.abilities||[]).map(a=>{const cn=abilitiesCn[a]||'';return cn?cn+' ('+a+')':a;}).join(', ')}</span>
+                        <span class="set-key">特性</span><span class="set-val">${(s.abilities||[]).map(a=>{const cn=getAbilityCn(a);return cn?cn+' ('+a+')':a;}).join(', ')}</span>
                         <span class="set-key">性格</span><span class="set-val">${(s.natures||[]).map(n=>{const cn=naturesCn[n]||'';return cn?cn+' ('+n+')':n;}).join(', ')}</span>
                         ${evParts.length?`<span class="set-key">努力值</span><span class="set-val">${evParts.join(' ')}</span>`:''}
                         <span class="set-key">配招</span><span class="set-val">${setMoves}</span>
@@ -993,6 +993,13 @@
             document.getElementById('moveSearchInput').value = q;
             const filtered = movesList.filter(m=>m.name.toLowerCase().includes(q)||m.cn.includes(q));
             renderMovesList(filtered);
+        }
+
+        // 特性名称提取
+        function getAbilityCn(name) {
+            const v = abilitiesCn[name];
+            if (!v) return '';
+            return typeof v === 'string' ? v : (v.name_cn || '');
         }
 
         // 特性列表
