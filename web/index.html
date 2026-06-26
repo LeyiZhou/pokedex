@@ -805,16 +805,14 @@
         // 当前详情页的宝可梦在列表中的索引
         let currentPokeIndex = -1;
         let savedScrollY = 0;
-        let enteringDetail = false;
 
         function selectPokemon(id) {
             searchResults.classList.remove('show');
             searchInput.value = '';
-            enteringDetail = true;
             switchTab('pokemon');
-            enteringDetail = false;
             const d = pokedex[id];
             if (d) {
+                // 保存滚动位置
                 savedScrollY = window.scrollY;
                 currentPokeIndex = pokeList.findIndex(p => p.id === id);
                 document.getElementById('pokemonList').style.display = 'none';
@@ -828,8 +826,9 @@
         function navPokemon(direction) {
             const newIndex = currentPokeIndex + direction;
             if (newIndex < 0 || newIndex >= pokeList.length) return;
+            const p = pokeList[newIndex];
             currentPokeIndex = newIndex;
-            showPokemon(pokeList[newIndex]);
+            showPokemon(p);
             window.scrollTo({ top: 0 });
         }
 
@@ -838,7 +837,8 @@
             document.getElementById('pokemonDetail').innerHTML = '';
             document.getElementById('pokemonList').style.display = 'block';
             currentPokeIndex = -1;
-            requestAnimationFrame(() => window.scrollTo({ top: savedScrollY }));
+            // 恢复滚动位置
+            window.scrollTo({ top: savedScrollY });
         }
 
         // 键盘左右箭头导航
@@ -1082,8 +1082,8 @@
             if (tab) tab.classList.add('active');
             const panel = document.getElementById('panel-'+name);
             if (panel) panel.classList.add('active');
-            // 切换到宝可梦 Tab 时回到列表视图（从详情进入时不调）
-            if (name === 'pokemon' && !enteringDetail) backToList();
+            // 切换到宝可梦 Tab 时回到列表视图
+            if (name === 'pokemon') backToList();
         }
         document.querySelectorAll('.tab').forEach(tab=>{
             tab.addEventListener('click',()=> switchTab(tab.dataset.tab));
